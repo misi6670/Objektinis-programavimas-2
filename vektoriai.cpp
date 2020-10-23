@@ -1,4 +1,4 @@
-#include "header.h"
+#include "vektoriai.h"
 
 void nuskaitymas(string txtname, vector<studentas>& grupe, int& StudSkai, int VidArMed)
 {
