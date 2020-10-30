@@ -2,6 +2,8 @@
 //
 
 #include "vektoriai.h"
+#include "listai.h"
+#include "testavimas.h"
 
 int main()
 {
@@ -27,7 +29,7 @@ int main()
     if (Testavimas == 1) {
         test("studentai1000", 1000, StudSkai, VidArMed);
         if (remove("studentai1000.txt") == 0) remove("studentai1000.txt");
-
+        
         test("studentai10000", 10000, StudSkai, VidArMed);
         if (remove("studentai10000.txt") == 0) remove("studentai10000.txt");
 
@@ -39,6 +41,7 @@ int main()
 
         test("studentai10000000", 10000000, StudSkai, VidArMed);
         if (remove("studentai10000000.txt") == 0) remove("studentai10000000.txt");
+        
     }
     else {
         cout << "\n Noredami duomenis nuskaityti is failo iveskite '1'; \n";

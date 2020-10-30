@@ -54,4 +54,3 @@ void irasymas(string name, vector<studentas> grupe, int VidArMed);
 void padalinimas(vector<studentas> grupe, vector<studentas>& grupe1, vector<studentas>& grupe2);
 void generavimas(string txt, int sk, int& ndsk);
 void zmogausVP(string& vardas, string& pavarde);
-void test(string txt, int duomsk, int StudSkai, int VidArMed);

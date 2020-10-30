@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{5a66c927-55c5-4a9b-b0b7-a9f0eaa79511}</ProjectGuid>
-    <RootNamespace>v04</RootNamespace>
+    <ProjectGuid>{0949e003-edb0-4774-8572-6f55fe1229e9}</ProjectGuid>
+    <RootNamespace>v05</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,12 +139,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="header.cpp" />
+    <ClCompile Include="listai.cpp" />
+    <ClCompile Include="testavimas.cpp" />
+    <ClCompile Include="vektoriai.cpp" />
     <ClCompile Include="klaidos.cpp" />
-    <ClCompile Include="v0.4.cpp" />
+    <ClCompile Include="v0.5.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="header.h" />
+    <ClInclude Include="listai.h" />
+    <ClInclude Include="testavimas.h" />
+    <ClInclude Include="vektoriai.h" />
     <ClInclude Include="klaidos.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
