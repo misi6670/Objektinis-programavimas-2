@@ -15,6 +15,7 @@ void test(string txt, int duomsk, int StudSkai, int VidArMed)
 
     generavimas(txt + ".txt", duomsk, ndsk);
     cout << "Failo is " << duomsk << " irasu (namu darbu skaicius: " << ndsk << ") testas: " << endl;
+    cout << endl;
 
     auto start = high_resolution_clock::now(); auto st = start;
     nuskaitymas(txt, grupe, StudSkai, VidArMed);
@@ -47,6 +48,7 @@ void test(string txt, int duomsk, int StudSkai, int VidArMed)
 
     diff = high_resolution_clock::now() - st;
     cout << endl << duomsk << " list'o irasu testo laikas: " << diff.count() << " s\n";
+    cout << endl;
 
     lgrupe.clear();
     lgrupe1.clear();
