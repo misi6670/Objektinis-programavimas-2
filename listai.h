@@ -40,7 +40,7 @@ struct lstudentas {
     int egz = 0;
     float galutinis = 0;
     float vid = 0;
-    bool operator <(const lstudentas & a) const
+    bool operator <(const lstudentas& a) const
     {
         if (Vardas != a.Vardas)
             return Vardas.compare(a.Vardas) < 0;
@@ -60,6 +60,6 @@ int lautosk(int nuo, int iki);
 void lpazymiai(lstudentas& stud, int i);
 void lisvedimas(list<lstudentas> grupe, int VidArMed);
 void lirasymas(string name, list<lstudentas> grupe, int VidArMed);
-void lpadalinimas(list<lstudentas> grupe, list<lstudentas>& grupe1);
+void lpadalinimas(list<lstudentas>& grupe, list<lstudentas>& grupe1);
 void lgeneravimas(string txt, int sk, int& ndsk);
 void lzmogausVP(string& vardas, string& pavarde);

@@ -51,6 +51,6 @@ void pazymiai(studentas& stud, int i);
 void isvedimas(vector<studentas> grupe, int VidArMed);
 bool compareTwoStudents(studentas a, studentas b);
 void irasymas(string name, vector<studentas> grupe, int VidArMed);
-void padalinimas(vector<studentas> grupe, vector<studentas>& grupe1, vector<studentas>& grupe2);
+void padalinimas(vector<studentas>& grupe, vector<studentas>& grupe1);
 void generavimas(string txt, int sk, int& ndsk);
 void zmogausVP(string& vardas, string& pavarde);

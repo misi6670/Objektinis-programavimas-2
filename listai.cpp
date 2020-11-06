@@ -190,14 +190,15 @@ void lirasymas(string name, list<lstudentas> grupe, int VidArMed)
     f.close();
 }
 
-void lpadalinimas(list<lstudentas> grupe, list<lstudentas>& grupe1)
+void lpadalinimas(list<lstudentas>& grupe, list<lstudentas>& grupe1)
 {
-    auto it = grupe.begin();
+    list<lstudentas> grupe2;
     for (auto& tt : grupe) {
-        if (tt.galutinis < 5) break;
-        else it++;
+        if (tt.galutinis < 5) grupe1.push_back(tt);
+        else grupe2.push_back(tt);
     }
-    grupe1.splice(grupe1.begin(), grupe, it, grupe.end());
+    grupe = grupe2;
+    grupe2.clear();
 }
 
 void lgeneravimas(string txt, int sk, int& ndsk)

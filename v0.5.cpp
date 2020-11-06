@@ -29,7 +29,7 @@ int main()
     if (Testavimas == 1) {
         test("studentai1000", 1000, StudSkai, VidArMed);
         if (remove("studentai1000.txt") == 0) remove("studentai1000.txt");
-        
+
         test("studentai10000", 10000, StudSkai, VidArMed);
         if (remove("studentai10000.txt") == 0) remove("studentai10000.txt");
 
@@ -69,14 +69,12 @@ int main()
 
         isvedimas(grupe, VidArMed);
         vector <studentas> grupe1;
-        vector <studentas> grupe2;
-        padalinimas(grupe, grupe1, grupe2);
+        padalinimas(grupe, grupe1);
         if (remove("neislaike.txt") == 0) remove("neislaike.txt");
         if (remove("islaike.txt") == 0) remove("islaike.txt");
         if (!grupe1.empty()) irasymas("neislaike.txt", grupe1, VidArMed);
-        if (!grupe2.empty()) irasymas("islaike.txt", grupe2, VidArMed);
+        if (!grupe.empty()) irasymas("islaike.txt", grupe, VidArMed);
         grupe1.clear();
-        grupe2.clear();
         grupe.clear();
     }
     return(0);

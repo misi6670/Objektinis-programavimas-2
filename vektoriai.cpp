@@ -201,8 +201,9 @@ void irasymas(string name, vector<studentas> grupe, int VidArMed)
     f.close();
 }
 
-void padalinimas(vector<studentas> grupe, vector<studentas>& grupe1, vector<studentas>& grupe2)
+void padalinimas(vector<studentas>& grupe, vector<studentas>& grupe1)
 {
+    vector<studentas> grupe2;
     int sk1 = 0;
     int sk2 = 0;
     for (auto& tt : grupe) {
@@ -217,6 +218,8 @@ void padalinimas(vector<studentas> grupe, vector<studentas>& grupe1, vector<stud
             grupe2.reserve(sk2);
         }
     }
+    grupe = grupe2;
+    grupe2.clear();
 }
 
 void generavimas(string txt, int sk, int& ndsk)
