@@ -135,3 +135,9 @@ Failo is 10000000 irasu (namu darbu skaicius: 1) testas:
 10000000 list'o irasu testo laikas: 19.4795 s
 ```
 Vektoriaus tipo konteineris yra spartesnis už sąrašo tipo konteinerį.
+
+## Testavimo sistemos parametrai
+
+* CPU -	Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz;
+* RAM - 10,0 GB DDR3;
+* SSD (216GB).
