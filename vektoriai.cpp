@@ -222,6 +222,40 @@ void padalinimas(vector<studentas>& grupe, vector<studentas>& grupe1)
     grupe2.clear();
 }
 
+void padalinimas1(vector<studentas> grupe, vector<studentas>& grupe1, vector<studentas>& grupe2)
+{
+    int sk1 = 0;
+    int sk2 = 0;
+    for (auto& tt : grupe) {
+        if (tt.galutinis < 5) {
+            grupe1.push_back(tt);
+            sk1++;
+            grupe1.reserve(sk1);
+        }
+        else {
+            grupe2.push_back(tt);
+            sk2++;
+            grupe2.reserve(sk2);
+        }
+    }
+}
+
+void padalinimas2(vector<studentas>& grupe, vector<studentas>& grupe1)
+{ 
+    vector<studentas> grupe2;
+    int sk1 = 0;
+    for (auto& tt : grupe) {
+        if (tt.galutinis < 5) {
+            grupe1.push_back(tt);
+            sk1++;
+            grupe1.reserve(sk1); 
+            
+        }
+    }
+    grupe.erase(std::remove_if(grupe.begin(), grupe.end(), [&](studentas const& studentas) {
+        return studentas.galutinis < 5; }), grupe.end());
+}
+
 void generavimas(string txt, int sk, int& ndsk)
 {
     vector<studentas> grupe;

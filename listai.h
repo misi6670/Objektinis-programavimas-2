@@ -61,5 +61,7 @@ void lpazymiai(lstudentas& stud, int i);
 void lisvedimas(list<lstudentas> grupe, int VidArMed);
 void lirasymas(string name, list<lstudentas> grupe, int VidArMed);
 void lpadalinimas(list<lstudentas>& grupe, list<lstudentas>& grupe1);
+void lpadalinimas1(list<lstudentas> grupe, list<lstudentas>& grupe1, list<lstudentas>& grupe2);
+void lpadalinimas2(list<lstudentas>& grupe, list<lstudentas>& grupe1);
 void lgeneravimas(string txt, int sk, int& ndsk);
 void lzmogausVP(string& vardas, string& pavarde);

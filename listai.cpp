@@ -201,6 +201,25 @@ void lpadalinimas(list<lstudentas>& grupe, list<lstudentas>& grupe1)
     grupe2.clear();
 }
 
+void lpadalinimas1(list<lstudentas> grupe, list<lstudentas>& grupe1, list<lstudentas>& grupe2)
+{
+    for (auto& tt : grupe) {
+        if (tt.galutinis < 5) grupe1.push_back(tt);
+        else grupe2.push_back(tt);
+    }
+}
+
+void lpadalinimas2(list<lstudentas>& grupe, list<lstudentas>& grupe1)
+{
+    for (auto& tt : grupe) {
+        if (tt.galutinis < 5){
+            grupe1.push_back(tt);
+        }
+    }
+    grupe.erase(std::remove_if(grupe.begin(), grupe.end(), [&](lstudentas const& studentas) {
+        return studentas.galutinis < 5; }), grupe.end());
+}
+
 void lgeneravimas(string txt, int sk, int& ndsk)
 {
     list<lstudentas> grupe;
