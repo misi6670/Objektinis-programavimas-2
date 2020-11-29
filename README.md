@@ -12,7 +12,7 @@
 
 Testas 1 (Release), galutinis balas skaičiuojamas pagal vidurkį:
 
-| Strategija | *vector*/*list* konteineris | 1000 irasu (namu darbu skaicius: 10) | 10000 irasu (namu darbu skaicius: 9) | 100000 irasu (namu darbu skaicius: 5) | 1000000 irasu (namu darbu skaicius: 2) | 10000000 irasu (namu darbu skaicius: 5) |
+| Strategija | *vector*/*list* konteineris | 1000 įrašų (namų darbų skaičius: 10) | 10000 įrašų (namų darbų skaičius: 9) | 100000 įrašų (namų darbų skaičius: 5) | 1000000 įrašų (namų darbų skaičius: 2) | 10000000 įrašų (namų darbų skaičius: 5) |
 | ---------- | -------------------- | ------------- | -------- | ------- | --------- | --------|
 | Mano | *vector* | 0.0002985 | 0.0034475 | 0.0395566 | 0.372931 | 4.81561 |
 | Mano | *list* | 0.0011241 | 0.0196356 | 0.100894 | 0.688984 | 59.5936 |
@@ -23,7 +23,7 @@ Testas 1 (Release), galutinis balas skaičiuojamas pagal vidurkį:
 
 Testas 2 (Release), galutinis balas skaičiuojamas pagal medianą:
 
-| Strategija | *vector*/*list* konteineris | 1000 irasu (namu darbu skaicius: 3) | 10000 irasu (namu darbu skaicius: 10) | 100000 irasu (namu darbu skaicius: 5) | 1000000 irasu (namu darbu skaicius: 3) | 10000000 irasu (namu darbu skaicius: 5) |
+| Strategija | *vector*/*list* konteineris | 1000 įrašų (namų darbų skaičius: 3) | 10000 įrašų (namų darbų skaičius: 10) | 100000 įrašų (namų darbų skaičius: 5) | 1000000 įrašų (namų darbų skaičius: 3) | 10000000 įrašų (namų darbų skaičius: 5) |
 | ---------- | -------------------- | ------------- | -------- | ------- | --------- | --------|
 | Mano | *vector* | 0.000288 | 0.0042814 | 0.0366799 | 0.40431 | 4.5509 |
 | Mano | *list* | 0.000649 | 0.0162968 | 0.0966317 | 0.767944 | 26.1436 |
@@ -80,7 +80,7 @@ Taip pat bus sukurti du failai 'islaike' ir 'neislaike', kuriuose studentai bus 
 </li>
 </ol>
 </li>
-<li> Pasirinkus nenuskaityti duomenis iš failo, pavyzdžiui, įvedus '0', jums reikės pasirinkti, ar norite, kad studento namų darbų ir egzamino balus programa sugeneruotų automatiškai. Norėdami, kad programa sugeruotų balus automatiškai, reikia įvesti '1', kitu atveju - '0' arba bet kokį kitą skaičių. 
+<li> Pasirinkus nenuskaityti duomenis iš failo, pavyzdžiui, įvedus '0', jums reikės pasirinkti, ar norite, kad studento namų darbų ir egzamino balus programa sugeneruotų automatiškai. Norėdami, kad programa sugeneruotų balus automatiškai, reikia įvesti '1', kitu atveju - '0' arba bet kokį kitą skaičių. 
 <ol>
 <li> Pasirinkus generuoti pažymius automatiškai, t.y. įvedus '1', jūsų programa paprašys įvesti studentų skaičių. Įvedus studentų skaičių, jums reikės suvesti studento vardą ir pavardę. Suvedus studento vardą ir pavardę, programa sugeneruoja pažymius ir juos išveda į ekraną tokiu pavidalu:
 
@@ -90,7 +90,7 @@ Taip pat bus sukurti du failai 'islaike' ir 'neislaike', kuriuose studentai bus 
 
 1 studento atsitiktinai sugeneruotas egzamino balas: 7
 ```
-Suvedus visu studentų vardus ir pavardes, į ekraną išvedami studentai, surūšiuoti pagal vardą, pavardę ir galutinį balą, tokiu pavidalu:
+Suvedus visų studentų vardus ir pavardes, į ekraną išvedami studentai, surūšiuoti pagal vardą, pavardę ir galutinį balą, tokiu pavidalu:
 
 ```
 Vardas         Pavarde        Galutinis (Vid./Med.)
@@ -100,20 +100,38 @@ Vardas2        Pavarde2       6.40
 Vardas3        Pavarde3       3.00
 Vardas4        Pavarde4       9.00
 ```
-Programa baigia darbą, procesas sustabdomas.
-</li>
-<li>Indented item</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>Third item
-<ol>
-<li>Indented item</li>
-<li>Indented item</li>
-</ol>
-</li>
-<li>Fourth item</li>
-</ol>
 
+Taip pat bus sukurti du failai 'islaike' ir 'neislaike', kuriuose studentai bus padalinti atitinkamai į tuos, kurių galutinis pažymys didesnis arba lygus 5, ir tuos, kurių galutinis pažymys mažesnis negu 5. Studentai surūšiuoti pagal vardą, pavardę ir galutinį balą. Programa baigia darbą, procesas sustabdomas.
+</li>
+<li> Pasirinkus negeneruoti pažymių automatiškai, pavyzdžiui, įvedus '0', jūsų programa paprašys įvesti studentų skaičių. Įvedus studentų skaičių, jums reikės suvesti studento vardą ir pavardę. Suvedus studento vardą ir pavardę, programa jūsų paprašys suvesti studento pažymius, kai įvesite bent vieną pažymį, programa jums parašys kiek pažymių jau įvedėte, pavyzdžiui:
 
+```
+ Iveskite 1 studento pazymius, suvedus visus pazymius irasykite 0
+5
+Ivedete 1 pazymi(-ius)
+6
+Ivedete 2 pazymi(-ius)
+7
+Ivedete 3 pazymi(-ius)
+10
+Ivedete 4 pazymi(-ius)
+0
+```
+
+Suvedus visus pažymius įveskite '0', kad programa suprastų, jog baigėte vesti visus pažymius. Tuomet programa paprašys jūsų įvesti studento egzamino pažymį. Suvedus visų studentų vardus ir pavardes, namų darbų pažymius ir egzamino rezultatus, į ekraną išvedami studentai, surūšiuoti pagal vardą, pavardę ir galutinį balą, tokiu pavidalu:
+
+```
+Vardas         Pavarde        Galutinis (Vid./Med.)
+---------------------------------------------------
+Vardas1        Pavarde1       7.80
+Vardas2        Pavarde2       6.40
+Vardas3        Pavarde3       3.00
+Vardas4        Pavarde4       9.00
+```
+
+Taip pat bus sukurti du failai 'islaike' ir 'neislaike', kuriuose studentai bus padalinti atitinkamai į tuos, kurių galutinis pažymys didesnis arba lygus 5, ir tuos, kurių galutinis pažymys mažesnis negu 5. Studentai surūšiuoti pagal vardą, pavardę ir galutinį balą. Programa baigia darbą, procesas sustabdomas. </li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
