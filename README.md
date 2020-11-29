@@ -1,143 +1,119 @@
+* [V0.1 versija](https://github.com/misi6670/Objektinis-programavimas/releases/tag/v0.1)
+* [V0.2 versija](https://github.com/misi6670/Objektinis-programavimas/releases/tag/V0.2)
+* [V0.3 versija](https://github.com/misi6670/Objektinis-programavimas/releases/tag/v0%2C3)
+* [V0.4 versija](https://github.com/misi6670/Objektinis-programavimas/releases/tag/V0.4)
+* [V0.5 versija](https://github.com/misi6670/Objektinis-programavimas/releases/tag/V0.5)
+
 # Programos veikimo greičio (spartos) analizė
-## Konteinerių testavimas
+## Pagal studentų dalijimo į dvi kategorijas strategijas
+* Mano strategija: Bendro studentai konteinerio (vector ir list tipų) skaidymas (rūšiavimas) į du naujus to paties tipo konteinerius: "neišlaikiusių" ir "išlaikiusių". Tada "išlaikiusiųjų" konteinerį priskiriam bendram studentų konteineriui, o "išlaikiusiųjų" konteinerį ištriname. Tokiu būdu sukuriame 2 naujus konteinerius ir po skaidymo vieną iš jų ištriname. Studentai lieka tik viename iš dviejų konteinerių: bendrame studentų arba "neišlaikiusiųjų".
+* 1 strategija: Bendro studentai konteinerio (vector ir list tipų) skaidymas (rūšiavimas) į du naujus to paties tipo konteinerius: "neišlaikiusių" ir "išlaikiusių". Tokiu būdu tas pats studentas yra dvejuose konteineriuose: bendrame studentai ir viename iš suskaidytų (neišlaikę arba išlaikę).
+* 2 strategija: Bendro studentų konteinerio (vector ir list) skaidymas (rūšiavimas) panaudojant tik vieną naują konteinerį: "neišlaikę". Tokiu būdu, jei studentas yra neišlaikęs, jį turime įkelti į naująjį "neišlaikiusiųjų" konteinerį ir ištrinti iš bendro studentai konteinerio. Po šio žingsnio studentai konteineryje liks vien tik išlaikę.
 
 Testas 1 (Release), galutinis balas skaičiuojamas pagal vidurkį:
-```
-Failo is 1000 irasu (namu darbu skaicius: 15) testas:
 
-1000 irasu nuskaitymas is failo naudojant vektorius uztruko: 0.0027942 s
-1000 studentu rusiavimas i dvi grupes/kategorijas naudojant vektorius uztruko: 0.0004301 s
-
-1000 vektor'iaus irasu testo laikas: 0.0131467 s
-
-1000 irasu nuskaitymas is failo naudojant sarasa uztruko: 0.0060781 s
-1000 studentu rusiavimas i dvi grupes/kategorijas naudojant sarasa uztruko: 0.0017459 s
-
-1000 list'o irasu testo laikas: 0.0086484 s
-```
-```
-Failo is 10000 irasu (namu darbu skaicius: 9) testas:
-
-10000 irasu nuskaitymas is failo naudojant vektorius uztruko: 0.0204433 s
-10000 studentu rusiavimas i dvi grupes/kategorijas naudojant vektorius uztruko: 0.003189 s
-
-10000 vektor'iaus irasu testo laikas: 0.0249827 s
-
-10000 irasu nuskaitymas is failo naudojant sarasa uztruko: 0.0425883 s
-10000 studentu rusiavimas i dvi grupes/kategorijas naudojant sarasa uztruko: 0.0142033 s
-
-10000 list'o irasu testo laikas: 0.0583719 s
-```
-```
-Failo is 100000 irasu (namu darbu skaicius: 10) testas:
-
-100000 irasu nuskaitymas is failo naudojant vektorius uztruko: 0.219365 s
-100000 studentu rusiavimas i dvi grupes/kategorijas naudojant vektorius uztruko: 0.0402562 s
-
-100000 vektor'iaus irasu testo laikas: 0.260883 s
-
-100000 irasu nuskaitymas is failo naudojant sarasa uztruko: 0.335916 s
-100000 studentu rusiavimas i dvi grupes/kategorijas naudojant sarasa uztruko: 0.156882 s
-
-100000 list'o irasu testo laikas: 0.494044 s
-```
-```
-Failo is 1000000 irasu (namu darbu skaicius: 1) testas:
-
-1000000 irasu nuskaitymas is failo naudojant vektorius uztruko: 1.43868 s
-1000000 studentu rusiavimas i dvi grupes/kategorijas naudojant vektorius uztruko: 0.366125 s
-
-1000000 vektor'iaus irasu testo laikas: 1.80634 s
-
-1000000 irasu nuskaitymas is failo naudojant sarasa uztruko: 1.46481 s
-1000000 studentu rusiavimas i dvi grupes/kategorijas naudojant sarasa uztruko: 0.525278 s
-
-1000000 list'o irasu testo laikas: 1.99486 s
-```
-```
-Failo is 10000000 irasu (namu darbu skaicius: 5) testas:
-
-10000000 irasu nuskaitymas is failo naudojant vektorius uztruko: 18.3712 s
-10000000 studentu rusiavimas i dvi grupes/kategorijas naudojant vektorius uztruko: 4.38341 s
-
-10000000 vektor'iaus irasu testo laikas: 22.7566 s
-
-10000000 irasu nuskaitymas is failo naudojant sarasa uztruko: 37.1613 s
-10000000 studentu rusiavimas i dvi grupes/kategorijas naudojant sarasa uztruko: 43.5856 s
-
-10000000 list'o irasu testo laikas: 80.7602 s
-```
+| Strategija | *vector*/*list* konteineris | 1000 irasu (namu darbu skaicius: 10) | 10000 irasu (namu darbu skaicius: 9) | 100000 irasu (namu darbu skaicius: 5) | 1000000 irasu (namu darbu skaicius: 2) | 10000000 irasu (namu darbu skaicius: 5) |
+| ---------- | -------------------- | ------------- | -------- | ------- | --------- | --------|
+| Mano | *vector* | 0.0002985 | 0.0034475 | 0.0395566 | 0.372931 | 4.81561 |
+| Mano | *list* | 0.0011241 | 0.0196356 | 0.100894 | 0.688984 | 59.5936 |
+| 1 | *vector* | 0.0003918 | 0.0036504 | 0.038899 | 0.41747 | 4.91621 |
+| 1 | *list* | 0.0019724 | 0.0354478 | 0.139332 | 0.924297 | 97.8132 |
+| 2 | *vector* | 6.89e-05 | 0.0007037 | 0.0102181 | 0.0777053 | 1.10297 |
+| 2 | *list* | 0.0004887 | 0.0081591 | 0.0494522 | 0.347034 | 6.97383 |
 
 Testas 2 (Release), galutinis balas skaičiuojamas pagal medianą:
+
+| Strategija | *vector*/*list* konteineris | 1000 irasu (namu darbu skaicius: 3) | 10000 irasu (namu darbu skaicius: 10) | 100000 irasu (namu darbu skaicius: 5) | 1000000 irasu (namu darbu skaicius: 3) | 10000000 irasu (namu darbu skaicius: 5) |
+| ---------- | -------------------- | ------------- | -------- | ------- | --------- | --------|
+| Mano | *vector* | 0.000288 | 0.0042814 | 0.0366799 | 0.40431 | 4.5509 |
+| Mano | *list* | 0.000649 | 0.0162968 | 0.0966317 | 0.767944 | 26.1436 |
+| 1 | *vector* | 0.0003367 | 0.004328 | 0.0382126 | 0.404099 | 9.31737 |
+| 1 | *list* | 0.0008952 | 0.0252198 | 0.141386 | 1.19202 | 47.7655 |
+| 2 | *vector* | 5.61e-05 | 0.0006266 | 0.0088301 | 0.0934583 | 0.970382 |
+| 2 | *list* | 0.0002275 | 0.0064777 | 0.0456874 | 0.395467 | 8.32207 |
+
+# Programos naudojimosi instrukcija
+Paleidus programą, jums reikės pasirinkti, ar norite atlikti testavimą.
+Norėdami atlikti testavimą, reikia įvesti '1', kitu atveju įrašyti '0' ar bet kokį kitą skaičių, išskyrus '1'.
+<ol>
+<li> Pasirinkus vykdyti testavimą, t.y. įvedus '1', reikės pasirinkti pagal ką norite, kad būtų skaičiuojamas galutinis balas.
+Norėdami, kad galutinis balas būtų skaičiuojamas pagal medianą, įveskite '1', jeigu pagal vidurkį, įveskite bet kokį kitą skaičių, pavyzdžiui, '0'. 
+<ol>
+<li> Tuomet yra atliekamas testas ir išvedami rezultatai, rezultatai išvedami į ekraną tokiu pavidalu:
+
 ```
-Failo is 1000 irasu (namu darbu skaicius: 10) testas:
+Failo is 1000 irasu (namu darbu skaicius: 3) testas:
 
-1000 irasu nuskaitymas is failo naudojant vektorius uztruko: 0.0025293 s
-1000 studentu rusiavimas i dvi grupes/kategorijas naudojant vektorius uztruko: 0.0004288 s
+1000 studentu rusiavimas i dvi grupes/kategorijas naudojant vektorius:
+1000 studentu rusiavimas i dvi grupes/kategorijas naudojant mano strategija uztruko: 0.0003393 s
+1000 studentu rusiavimas i dvi grupes/kategorijas naudojant 1 strategija uztruko: 0.0003538 s
+1000 studentu rusiavimas i dvi grupes/kategorijas naudojant 2 strategija uztruko: 5.85e-05 s
 
-1000 vektor'iaus irasu testo laikas: 0.0037832 s
-
-1000 irasu nuskaitymas is failo naudojant sarasa uztruko: 0.0041405 s
-1000 studentu rusiavimas i dvi grupes/kategorijas naudojant sarasa uztruko: 0.0012348 s
-
-1000 list'o irasu testo laikas: 0.0063875 s
+1000 studentu rusiavimas i dvi grupes/kategorijas naudojant sarasa:
+1000 studentu rusiavimas i dvi grupes/kategorijas naudojant mano strategija uztruko: 0.0005333 s
+1000 studentu rusiavimas i dvi grupes/kategorijas naudojant 1 strategija uztruko: 0.0008412 s
+1000 studentu rusiavimas i dvi grupes/kategorijas naudojant 2 strategija uztruko: 0.0002125 s
 ```
+
+Testas atliekamas su failais iš 1000, 10000, 100000, 1000000 ir 10000000 įrašų, namų darbų skaičius generuojamas atsitiktinai ir kiekvienam failui skiriasi.
+Programa baigia darbą, procesas sustabdomas. </li>
+</ol></li>
+<li> Pasirinkus testavimo nevykdyti, t.y. įvedus, pavyzdžiui, '0', reikės pasirinkti pagal ką norite, kad būtų skaičiuojamas galutinis balas.
+Norėdami, kad galutinis balas būtų skaičiuojamas pagal medianą, įveskite '1', jeigu pagal vidurkį, įveskite bet kokį kitą skaičių, pavyzdžiui, '0'.
+<ol>
+<li> Tuomet reikia pasirinkti, ar norite nuskaityti duomenis iš failo. Norėdami duomenis nuskaityti iš failo įveskite '1';
+Kitu atveju įveskite '0' ar bet kokį kitą skaičių.
+<ol>
+<li> Pasirinkus nuskaityti duomenis iš failo, t.y. įvedus '1', programa jūsų paprašys įvesti norimo nuskaityti tekstinio failo pavadinimą, tačiau '.txt' rašyti nereikia. Pavyzdžiui, jei norite, kad programa nuskaitytų failą 'studentai.txt', tai reikia įvesti tik patį pavadinimą, t.y. tik 'studentai'.
+Tuomet rezultatai bus išvedami į ekraną tokiu šablonu:
+
 ```
-Failo is 10000 irasu (namu darbu skaicius: 4) testas:
-
-10000 irasu nuskaitymas is failo naudojant vektorius uztruko: 0.0168467 s
-10000 studentu rusiavimas i dvi grupes/kategorijas naudojant vektorius uztruko: 0.004065 s
-
-10000 vektor'iaus irasu testo laikas: 0.0218636 s
-
-10000 irasu nuskaitymas is failo naudojant sarasa uztruko: 0.0245986 s
-10000 studentu rusiavimas i dvi grupes/kategorijas naudojant sarasa uztruko: 0.0155041 s
-
-10000 list'o irasu testo laikas: 0.0471038 s
+Vardas         Pavarde        Galutinis (Vid./Med.)
+---------------------------------------------------
+Vardas1        Pavarde1       7.80
+Vardas2        Pavarde2       6.40
+Vardas3        Pavarde3       3.00
+Vardas4        Pavarde4       9.00
 ```
+
+Taip pat bus sukurti du failai 'islaike' ir 'neislaike', kuriuose studentai bus padalinti atitinkamai į tuos, kurių galutinis pažymys didesnis arba lygus 5, ir tuos, kurių galutinis pažymys mažesnis negu 5. Studentai surūšiuoti pagal vardą, pavardę ir galutinį balą. Programa baigia darbą, procesas sustabdomas.
+</li>
+</ol>
+</li>
+<li> Pasirinkus nenuskaityti duomenis iš failo, pavyzdžiui, įvedus '0', jums reikės pasirinkti, ar norite, kad studento namų darbų ir egzamino balus programa sugeneruotų automatiškai. Norėdami, kad programa sugeruotų balus automatiškai, reikia įvesti '1', kitu atveju - '0' arba bet kokį kitą skaičių. 
+<ol>
+<li> Pasirinkus generuoti pažymius automatiškai, t.y. įvedus '1', jūsų programa paprašys įvesti studentų skaičių. Įvedus studentų skaičių, jums reikės suvesti studento vardą ir pavardę. Suvedus studento vardą ir pavardę, programa sugeneruoja pažymius ir juos išveda į ekraną tokiu pavidalu:
+
 ```
-Failo is 100000 irasu (namu darbu skaicius: 1) testas:
+1 studento atsitiktinai sugeneruoti pazymiai:
+3 10 10 3 3 4 7 1 7 6 10 6 2 10
 
-100000 irasu nuskaitymas is failo naudojant vektorius uztruko: 0.140397 s
-100000 studentu rusiavimas i dvi grupes/kategorijas naudojant vektorius uztruko: 0.0322157 s
-
-100000 vektor'iaus irasu testo laikas: 0.173975 s
-
-100000 irasu nuskaitymas is failo naudojant sarasa uztruko: 0.151513 s
-100000 studentu rusiavimas i dvi grupes/kategorijas naudojant sarasa uztruko: 0.0483191 s
-
-100000 list'o irasu testo laikas: 0.201386 s
+1 studento atsitiktinai sugeneruotas egzamino balas: 7
 ```
+Suvedus visu studentų vardus ir pavardes, į ekraną išvedami studentai, surūšiuoti pagal vardą, pavardę ir galutinį balą, tokiu pavidalu:
+
 ```
-Failo is 1000000 irasu (namu darbu skaicius: 1) testas:
-
-1000000 irasu nuskaitymas is failo naudojant vektorius uztruko: 1.4081 s
-1000000 studentu rusiavimas i dvi grupes/kategorijas naudojant vektorius uztruko: 0.378748 s
-
-1000000 vektor'iaus irasu testo laikas: 1.78843 s
-
-1000000 irasu nuskaitymas is failo naudojant sarasa uztruko: 1.5147 s
-1000000 studentu rusiavimas i dvi grupes/kategorijas naudojant sarasa uztruko: 0.538772 s
-
-1000000 list'o irasu testo laikas: 2.05588 s
+Vardas         Pavarde        Galutinis (Vid./Med.)
+---------------------------------------------------
+Vardas1        Pavarde1       7.80
+Vardas2        Pavarde2       6.40
+Vardas3        Pavarde3       3.00
+Vardas4        Pavarde4       9.00
 ```
-```
-Failo is 10000000 irasu (namu darbu skaicius: 1) testas:
+Programa baigia darbą, procesas sustabdomas.
+</li>
+<li>Indented item</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Third item
+<ol>
+<li>Indented item</li>
+<li>Indented item</li>
+</ol>
+</li>
+<li>Fourth item</li>
+</ol>
 
-10000000 irasu nuskaitymas is failo naudojant vektorius uztruko: 14.327 s
-10000000 studentu rusiavimas i dvi grupes/kategorijas naudojant vektorius uztruko: 4.05786 s
 
-10000000 vektor'iaus irasu testo laikas: 18.3862 s
-
-10000000 irasu nuskaitymas is failo naudojant sarasa uztruko: 14.2327 s
-10000000 studentu rusiavimas i dvi grupes/kategorijas naudojant sarasa uztruko: 5.24499 s
-
-10000000 list'o irasu testo laikas: 19.4795 s
-```
-Vektoriaus tipo konteineris yra spartesnis už sąrašo tipo konteinerį.
-
-## Testavimo sistemos parametrai
-
-* CPU -	Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz;
-* RAM - 10,0 GB DDR3;
-* SSD (216GB).
