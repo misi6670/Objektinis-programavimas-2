@@ -1,8 +1,13 @@
 * [V0.1 versija](https://github.com/misi6670/Objektinis-programavimas/releases/tag/v0.1)
+Programa nuskaito vartotojų įvedamus duomenis - studento vardą ir pavardę, namų darbų ir egzamino rezultatą. Baigus duomenų įvedimą, suskaičiuoja galutinį balą ir juos pateikia į ekraną. Galutinis balas skaičiuojamas pagal vartotojo pasirinkimą - naudojant vidurkį arba medianą ir yra pateikiamas dviejų skaičių po kablelio tikslumu. Vartotojui pasirinkus, studento pažymius galima generuoti atsitiktinai.
 * [V0.2 versija](https://github.com/misi6670/Objektinis-programavimas/releases/tag/V0.2)
+Šioje programos versijoje galima duomenis ne tik įvesti, bet ir nuskaityti iš failo. Rezultatuose išvedami studentai surūšiuoti pagal vardus, pavardes ir galutinį balą.
 * [V0.3 versija](https://github.com/misi6670/Objektinis-programavimas/releases/tag/v0%2C3)
+Šioje realizacijoje naudojamos struktūros, yra antraštiniai failai, naudojamas išimčių valdymas.
 * [V0.4 versija](https://github.com/misi6670/Objektinis-programavimas/releases/tag/V0.4)
+Šioje realizacijoje studentai yra padalinami į dvi kategorijas - "išlaikiusieji" (studentai, kurių galutinis balas >= 5.0) ir "neišlaikiusieji" (studentai, kurių galutinis balas < 5.0) - ir atitinkamai išvedami į du naujus failus - "islaike.txt" ir "neislaike.txt". Vartotojui pasirinkus, galima atlikti programos veikimo greičio (spartos) analizę. Testas atliekamas su 5 failais iš 1000, 10000, 100000, 1000000, 10000000 įrašų, testo metu jie yra sugeneruojami ir pasibaigus testavimui ištrinami. Matavimai atliekami su kiekvienu failu. Matuojamas: failo kūrimas, duomenų nuskaitymas iš failo, studentų rūšiavimas į dvi grupes/kategorijas, surūšiuotų studentų išvedimas į du naujus failus.
 * [V0.5 versija](https://github.com/misi6670/Objektinis-programavimas/releases/tag/V0.5)
+Šioje realizacijoje vartotojui pasirinkus, galima atlikti programos veikimo greičio (spartos) analizę. Testas atliekamas su 5 failais iš 1000, 10000, 100000, 1000000, 10000000 įrašų, testo metu jie yra sugeneruojami ir pasibaigus testavimui ištrinami. Matavimai atliekami su kiekvienu failu. Matuojamas: duomenų nuskaitymas iš failo naudojant vektorio tipo konteinerį, studentų rūšiavimas į dvi grupes/kategorijas naudojant vektorio tipo konteinerį, duomenų nuskaitymas iš failo naudojant sąrašo tipo konteinerį ir studentų rūšiavimas į dvi grupes/kategorijas naudojant sąrašo tipo konteinerį.
 
 # Programos veikimo greičio (spartos) analizė
 ## Pagal studentų dalijimo į dvi kategorijas strategijas
@@ -33,13 +38,12 @@ Testas 2 (Release), galutinis balas skaičiuojamas pagal medianą:
 | 2 | *list* | 0.0002275 | 0.0064777 | 0.0456874 | 0.395467 | 8.32207 |
 
 # Programos naudojimosi instrukcija
-Paleidus programą, jums reikės pasirinkti, ar norite atlikti testavimą.
+Paleidus programą, reikia pasirinkti, ar norite atlikti testavimą.
 Norėdami atlikti testavimą, reikia įvesti '1', kitu atveju įrašyti '0' ar bet kokį kitą skaičių, išskyrus '1'.
 <ol>
 <li> Pasirinkus vykdyti testavimą, t.y. įvedus '1', reikės pasirinkti pagal ką norite, kad būtų skaičiuojamas galutinis balas.
 Norėdami, kad galutinis balas būtų skaičiuojamas pagal medianą, įveskite '1', jeigu pagal vidurkį, įveskite bet kokį kitą skaičių, pavyzdžiui, '0'. 
-<ol>
-<li> Tuomet yra atliekamas testas ir išvedami rezultatai, rezultatai išvedami į ekraną tokiu pavidalu:
+Tuomet yra atliekamas testas ir išvedami rezultatai į ekraną tokiu pavidalu:
 
 ```
 Failo is 1000 irasu (namu darbu skaicius: 3) testas:
@@ -57,12 +61,10 @@ Failo is 1000 irasu (namu darbu skaicius: 3) testas:
 
 Testas atliekamas su failais iš 1000, 10000, 100000, 1000000 ir 10000000 įrašų, namų darbų skaičius generuojamas atsitiktinai ir kiekvienam failui skiriasi.
 Programa baigia darbą, procesas sustabdomas. </li>
-</ol></li>
+
 <li> Pasirinkus testavimo nevykdyti, t.y. įvedus, pavyzdžiui, '0', reikės pasirinkti pagal ką norite, kad būtų skaičiuojamas galutinis balas.
-Norėdami, kad galutinis balas būtų skaičiuojamas pagal medianą, įveskite '1', jeigu pagal vidurkį, įveskite bet kokį kitą skaičių, pavyzdžiui, '0'.
-<ol>
-<li> Tuomet reikia pasirinkti, ar norite nuskaityti duomenis iš failo. Norėdami duomenis nuskaityti iš failo įveskite '1';
-Kitu atveju įveskite '0' ar bet kokį kitą skaičių.
+Norėdami, kad galutinis balas būtų skaičiuojamas pagal medianą, įveskite '1', jeigu pagal vidurkį, įveskite bet kokį kitą skaičių, pavyzdžiui, '0'. 
+Tuomet reikia pasirinkti, ar norite nuskaityti duomenis iš failo. Norėdami duomenis nuskaityti iš failo įveskite '1', kitu atveju įveskite '0' ar bet kokį kitą skaičių.
 <ol>
 <li> Pasirinkus nuskaityti duomenis iš failo, t.y. įvedus '1', programa jūsų paprašys įvesti norimo nuskaityti tekstinio failo pavadinimą, tačiau '.txt' rašyti nereikia. Pavyzdžiui, jei norite, kad programa nuskaitytų failą 'studentai.txt', tai reikia įvesti tik patį pavadinimą, t.y. tik 'studentai'.
 Tuomet rezultatai bus išvedami į ekraną tokiu šablonu:
@@ -77,8 +79,6 @@ Vardas4        Pavarde4       9.00
 ```
 
 Taip pat bus sukurti du failai 'islaike' ir 'neislaike', kuriuose studentai bus padalinti atitinkamai į tuos, kurių galutinis pažymys didesnis arba lygus 5, ir tuos, kurių galutinis pažymys mažesnis negu 5. Studentai surūšiuoti pagal vardą, pavardę ir galutinį balą. Programa baigia darbą, procesas sustabdomas.
-</li>
-</ol>
 </li>
 <li> Pasirinkus nenuskaityti duomenis iš failo, pavyzdžiui, įvedus '0', jums reikės pasirinkti, ar norite, kad studento namų darbų ir egzamino balus programa sugeneruotų automatiškai. Norėdami, kad programa sugeneruotų balus automatiškai, reikia įvesti '1', kitu atveju - '0' arba bet kokį kitą skaičių. 
 <ol>
