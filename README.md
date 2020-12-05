@@ -1,3 +1,4 @@
+# Objektinis programavimas
 * [V0.1 versija](https://github.com/misi6670/Objektinis-programavimas/releases/tag/v0.1)
 Programa nuskaito vartotojų įvedamus duomenis - studento vardą ir pavardę, namų darbų ir egzamino rezultatą. Baigus duomenų įvedimą, suskaičiuoja galutinį balą ir juos pateikia į ekraną. Galutinis balas skaičiuojamas pagal vartotojo pasirinkimą - naudojant vidurkį arba medianą ir yra pateikiamas dviejų skaičių po kablelio tikslumu. Vartotojui pasirinkus, studento pažymius galima generuoti atsitiktinai.
 * [V0.2 versija](https://github.com/misi6670/Objektinis-programavimas/releases/tag/V0.2)
