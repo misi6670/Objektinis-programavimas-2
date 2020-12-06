@@ -28,7 +28,6 @@ void nuskaitymas(string txtname, vector<studentas>& grupe, int& StudSkai, int Vi
             pirmas = 1;
         }
         else {
-            studentas stud;
             n = NamuDarbuSk;
             for (int i = 0; i < str.length(); i++)
             {
@@ -64,11 +63,7 @@ void nuskaitymas(string txtname, vector<studentas>& grupe, int& StudSkai, int Vi
                     }
                 }
             }
-            stud.setVardas(Vardas);
-            stud.setPavarde(Pavarde);
-            stud.setNDskaicius(n);
-            stud.setND(nd);
-            stud.setEgzaminas(egz);
+            studentas stud(VidArMed, Vardas, Pavarde, n, nd, egz);
             grupe.push_back(stud);
             nd.clear();
         }
@@ -84,7 +79,6 @@ void ivedimas(vector<studentas>& grupe, int StudSkai, int VidArMed, int AutoGen)
     int egz;
 
     for (int i = 0; i < StudSkai; i++) {
-        studentas stud;
 
         cout << "\n Iveskite " << i + 1 << " studento varda ir pavarde \n";
         cin >> Vardas >> Pavarde;
@@ -122,11 +116,7 @@ void ivedimas(vector<studentas>& grupe, int StudSkai, int VidArMed, int AutoGen)
             skaitymoKlaidosPaz(egz, -1);
         }
 
-        stud.setVardas(Vardas);
-        stud.setPavarde(Pavarde);
-        stud.setNDskaicius(n);
-        stud.setND(nd);
-        stud.setEgzaminas(egz);
+        studentas stud(VidArMed, Vardas, Pavarde, n, nd, egz);
 
         grupe.push_back(stud);
         nd.clear();
@@ -149,7 +139,7 @@ void isvedimas(vector<studentas> grupe, int VidArMed)
     const int PavSimb = 15;
     const int GalutSimb = 16;
 
-    sort(grupe.begin(), grupe.end(), studentas::compare);
+    sort(grupe.begin(), grupe.end());
     cout << endl;
     cout << left << setw(VardSimb) << setfill(separator) << "Vardas";
     cout << left << setw(PavSimb) << setfill(separator) << "Pavarde";
@@ -171,7 +161,7 @@ void irasymas(string name, vector<studentas> grupe, int VidArMed)
     const int GalutSimb = 16;
     ofstream f(name);
 
-    sort(grupe.begin(), grupe.end(), studentas::compare);
+    sort(grupe.begin(), grupe.end());
     f << left << setw(VardSimb) << setfill(separator) << "Vardas";
     f << left << setw(PavSimb) << setfill(separator) << "Pavarde";
     if (VidArMed == 1) f << left << setw(GalutSimb) << setfill(separator) << "Galutinis (Med.)" << endl;

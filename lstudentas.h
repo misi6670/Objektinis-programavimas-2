@@ -40,11 +40,10 @@ private:
     list <int> nd;
     int n = 0;
     int egz;
-    float galutinis = 0;
-    float vid = 0;
-    float med = 0;
-    float suma = 0;
-    int vidarmed = 0;
+    float galutinis;
+    float vid;
+    float med;
+    int vidarmed;
 public:
     lstudentas() {
         Vardas = "";
@@ -54,16 +53,18 @@ public:
         galutinis = 0;
         vid = 0;
         med = 0;
+        vidarmed = 0;
     }
-    lstudentas(string vard, string pav, int sk, list<int> ndg, int egzam) {
+    lstudentas(int vidmed, string vard, string pav, int sk, list<int> ndl, int egzam) {
+        vidarmed = vidmed;
         Vardas = vard;
         Pavarde = pav;
         n = sk;
-        nd = ndg;
+        nd = ndl;
         egz = egzam;
         setGalutinis();
     }
-
+    ~lstudentas() { nd.clear(); }
     void setVidarmed(int vam) { vidarmed = vam; }
     int getVidarmed() const { return vidarmed; }
     void setVardas(string vard) { Vardas = vard; }
@@ -78,28 +79,28 @@ public:
     int getEgzaminas() const { return egz; }
     void setGalutinis() { if (vidarmed == 1) galutinis = countGalutinis(med); else galutinis = countGalutinis(vid); }
     float getGalutinis() const { return galutinis; }
-    float countVidurkis() { for (float a : nd) suma = suma + a; vid = suma / n; return vid; }
+    float countVidurkis() { float suma = 0; for (float a : nd) suma = suma + a; return vid = suma / n; }
     float countMediana() {
         nd.sort();
         auto itr = nd.begin();
         if (nd.size() % 2 == 0) {
             for (int i = 0; i < nd.size() / 2; i++) itr++;
-            galutinis = ((double)*itr + *--itr) / 2;
+            return med = ((double)*itr + *--itr) / 2;
         }
         else {
             for (int i = 0; i < nd.size() / 2; i++) itr++;
-            galutinis = *itr;
+            return med = *itr;
         }
     }
     float countGalutinis(float vam) { galutinis = vam * 0.4 + (float)egz * 0.6; return galutinis; }
-    bool compare(const lstudentas& a, const lstudentas& b) {
-        if (a.getVardas() != b.getVardas())
-            return a.getVardas().compare(b.getVardas()) < 0;
+    bool operator <(const lstudentas& a) const {
+        if (getVardas() != a.getVardas())
+            return getVardas().compare(a.getVardas()) < 0;
 
-        if (a.getPavarde() != b.getPavarde())
-            return a.getPavarde().compare(b.getPavarde()) < 0;
+        if (getPavarde() != a.getPavarde())
+            return getPavarde().compare(a.getPavarde()) < 0;
 
-        return (a.getGalutinis() > b.getGalutinis());
+        return (getGalutinis() > a.getGalutinis());
     }
 };
 

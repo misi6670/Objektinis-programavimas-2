@@ -29,7 +29,6 @@ void lnuskaitymas(string txtname, list<lstudentas>& grupe, int& StudSkai, int Vi
             pirmas = 1;
         }
         else {
-            lstudentas stud;
             n = NamuDarbuSk;
             for (int i = 0; i < str.length(); i++)
             {
@@ -65,11 +64,7 @@ void lnuskaitymas(string txtname, list<lstudentas>& grupe, int& StudSkai, int Vi
                     }
                 }
             }
-            stud.setVardas(Vardas);
-            stud.setPavarde(Pavarde);
-            stud.setNDskaicius(n);
-            stud.setND(nd);
-            stud.setEgzaminas(egz);
+            lstudentas stud(VidArMed, Vardas, Pavarde, n, nd, egz);
             grupe.push_back(stud);
             nd.clear();
         }
@@ -79,7 +74,6 @@ void lnuskaitymas(string txtname, list<lstudentas>& grupe, int& StudSkai, int Vi
 void livedimas(list<lstudentas>& grupe, int StudSkai, int VidArMed, int AutoGen)
 {
     for (int i = 0; i < StudSkai; i++) {
-        lstudentas stud;
         string Vardas;
         string Pavarde;
         list <int> nd;
@@ -120,11 +114,7 @@ void livedimas(list<lstudentas>& grupe, int StudSkai, int VidArMed, int AutoGen)
             cin >> egz;
             skaitymoKlaidosPaz(egz, -1);
         }
-        stud.setVardas(Vardas);
-        stud.setPavarde(Pavarde);
-        stud.setNDskaicius(n);
-        stud.setND(nd);
-        stud.setEgzaminas(egz);
+        lstudentas stud(VidArMed, Vardas, Pavarde, n, nd, egz);
         grupe.push_back(stud);
         nd.clear();
     }

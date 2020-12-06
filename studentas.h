@@ -38,13 +38,12 @@ private:
     string Vardas;
     string Pavarde;
     vector <int> nd;
-    int n = 0;
+    int n;
     int egz;
-    float galutinis = 0;
-    float vid = 0;
-    float med = 0;
-    float suma = 0;
-    int vidarmed = 0;
+    float galutinis;
+    float vid;
+    float med;
+    int vidarmed;
 public:
     studentas() {
         Vardas = "";
@@ -54,17 +53,21 @@ public:
         galutinis = 0;
         vid = 0;
         med = 0;
+        vidarmed = 0;
     }
-    studentas(string vard, string pav, vector<int> ndg, int egzam) {
+    studentas(int vidmed, string vard, string pav, int sk, vector<int> ndv, int egzam) {
+        vidarmed = vidmed;
         Vardas = vard;
         Pavarde = pav;
-        n = 0;
-        nd = ndg;
+        n = sk;
+        nd = ndv;
         nd.reserve(n);
         egz = egzam;
+        vid = countVidurkis(); 
+        med = countMediana();
         setGalutinis();
     }
-
+    ~studentas() { nd.clear(); }
     void setVidarmed(int vam) { vidarmed = vam; }
     int getVidarmed() const { return vidarmed; }
     void setVardas(string vard) { Vardas = vard; }
@@ -79,26 +82,25 @@ public:
     int getEgzaminas() const { return egz; }
     void setGalutinis() { if (vidarmed == 1) galutinis = countGalutinis(med); else galutinis = countGalutinis(vid); }
     float getGalutinis() const { return galutinis; }
-    float countVidurkis() { for (float a : nd) suma = suma + a; vid = suma / n; return vid; }
+    float countVidurkis() { float suma = 0; for (float a : nd) suma = suma + a; return vid = suma / n; }
     float countMediana() {
         sort(nd.begin(), nd.end());
-        if (n % 2 != 0) galutinis = (float)nd.at(n / 2);
+        if (n % 2 != 0) return med = (float)nd.at(n / 2);
         else {
-            int med;
-            med = nd.at((n - 1) / 2) + nd.at(n / 2);
-            galutinis = (float)med / 2.0;
+            int m;
+            m = nd.at((n - 1) / 2) + nd.at(n / 2);
+            return med = (float)m / 2.0;
         }
-        return med;
     }
     float countGalutinis(float vam) { galutinis = vam * 0.4 + (float)egz * 0.6; return galutinis; }
-    bool compare(const studentas& a, const studentas& b) {
-        if (a.getVardas() != b.getVardas())
-            return a.getVardas().compare(b.getVardas()) < 0;
+    bool operator <(const studentas & a) const {
+        if (getVardas() != a.getVardas())
+            return getVardas().compare(a.getVardas()) < 0;
 
-        if (a.getPavarde() != b.getPavarde())
-            return a.getPavarde().compare(b.getPavarde()) < 0;
+        if (getPavarde() != a.getPavarde())
+            return getPavarde().compare(a.getPavarde()) < 0;
 
-        return (a.getGalutinis() > b.getGalutinis());
+        return (getGalutinis() > a.getGalutinis());
     }
 };
 
