@@ -1,9 +1,30 @@
-// v1.0.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// V1.1.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include "vektoriai.h"
-#include "listai.h"
+#include "studentas.h"
+#include "lstudentas.h"
 #include "testavimas.h"
+
+using std::cout;
+using std::cin;
+using std::string;
+using std::vector;
+using std::endl;
+using std::left;
+using std::setw;
+using std::setfill;
+using std::fixed;
+using std::setprecision;
+using std::sort;
+using std::ifstream;
+using std::ofstream;
+using std::getline;
+using std::ios;
+using std::count;
+using std::to_string;
+using std::chrono::high_resolution_clock;
+using std::chrono::duration;
+using std::map;
 
 int main()
 {
@@ -29,7 +50,7 @@ int main()
     if (Testavimas == 1) {
         test("studentai1000", 1000, StudSkai, VidArMed);
         if (remove("studentai1000.txt") == 0) remove("studentai1000.txt");
-        
+
         test("studentai10000", 10000, StudSkai, VidArMed);
         if (remove("studentai10000.txt") == 0) remove("studentai10000.txt");
 

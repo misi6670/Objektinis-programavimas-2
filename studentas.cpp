@@ -1,4 +1,4 @@
-#include "vektoriai.h"
+#include "studentas.h"
 
 void nuskaitymas(string txtname, vector<studentas>& grupe, int& StudSkai, int VidArMed)
 {
@@ -7,6 +7,11 @@ void nuskaitymas(string txtname, vector<studentas>& grupe, int& StudSkai, int Vi
     vector<string> eilute;
     string eil;
     ifstream f(txtname + ".txt");
+    string Vardas;
+    string Pavarde;
+    vector <int> nd;
+    int n = 0;
+    int egz;
 
     while (f) {
         if (!f.eof()) {
@@ -24,30 +29,29 @@ void nuskaitymas(string txtname, vector<studentas>& grupe, int& StudSkai, int Vi
         }
         else {
             studentas stud;
-            stud.n = NamuDarbuSk;
-            stud.nd.reserve(stud.n);
+            n = NamuDarbuSk;
             for (int i = 0; i < str.length(); i++)
             {
                 if (str.at(i) >= 'A' && str.at(i) <= 'Z') {
-                    if (stud.Vardas == "")
+                    if (Vardas == "")
                         while (str.at(i) != ' ') {
-                            stud.Vardas += str.at(i);
+                            Vardas += str.at(i);
                             i++;
                         }
                     else
                         while (str.at(i) != ' ') {
-                            stud.Pavarde += str.at(i);
+                            Pavarde += str.at(i);
                             i++;
                         }
                 }
                 else if (isdigit(str.at(i))) {
                     int a = i + 1;
                     if (i == str.length() - 2) {
-                        stud.egz = (str.at(i) - '0') * 10 + (str.at(a) - '0');
+                        egz = (str.at(i) - '0') * 10 + (str.at(a) - '0');
                         i++;
                     }
                     else if (i == str.length() - 1) {
-                        stud.egz = str.at(i) - '0';
+                        egz = str.at(i) - '0';
                     }
                     else {
                         int paz = 0;
@@ -56,64 +60,77 @@ void nuskaitymas(string txtname, vector<studentas>& grupe, int& StudSkai, int Vi
                             paz = (str.at(i) - '0') * 10 + (str.at(a) - '0');
                             i++;
                         }
-                        stud.vid = stud.vid + (float)paz;
-                        stud.nd.push_back(paz);
+                        nd.push_back(paz);
                     }
                 }
             }
-            if (VidArMed == 1) mediana(stud);
-            else stud.galutinis = stud.vid / (float)stud.n;
-            stud.galutinis = stud.galutinis * 0.4 + (float)stud.egz * 0.6;
+            stud.setVardas(Vardas);
+            stud.setPavarde(Pavarde);
+            stud.setNDskaicius(n);
+            stud.setND(nd);
+            stud.setEgzaminas(egz);
             grupe.push_back(stud);
-            stud.nd.clear();
+            nd.clear();
         }
-    }
-}
-
-void mediana(studentas& stud)
-{
-    sort(stud.nd.begin(), stud.nd.end());
-    if (stud.n % 2 != 0) stud.galutinis = (float)stud.nd.at(stud.n / 2);
-    else {
-        int med;
-        med = stud.nd.at((stud.n - 1) / 2) + stud.nd.at(stud.n / 2);
-        stud.galutinis = (float)med / 2.0;
     }
 }
 
 void ivedimas(vector<studentas>& grupe, int StudSkai, int VidArMed, int AutoGen)
 {
+    string Vardas;
+    string Pavarde;
+    vector <int> nd;
+    int n = 0;
+    int egz;
+
     for (int i = 0; i < StudSkai; i++) {
         studentas stud;
 
         cout << "\n Iveskite " << i + 1 << " studento varda ir pavarde \n";
-        cin >> stud.Vardas >> stud.Pavarde;
+        cin >> Vardas >> Pavarde;
 
-        if (AutoGen == 1) autogen(stud, i);
-        else pazymiai(stud, i);
-        if (VidArMed == 1) mediana(stud);
-        else stud.galutinis = stud.vid / (float)stud.n;
-        stud.galutinis = stud.galutinis * 0.4 + (float)stud.egz * 0.6;
+        if (AutoGen == 1) {
+            cout << "\n" << i + 1 << " studento atsitiktinai sugeneruoti pazymiai: \n";
+            n = autosk(1, 15);
+            for (int j = 0; j < n; j++) {
+                int random;
+                random = autosk(1, 10);
+                cout << random << " ";
+                nd.push_back(random);
+            }
+            cout << endl;
+            egz = autosk(1, 10);
+            cout << "\n" << i + 1 << " studento atsitiktinai sugeneruotas egzamino balas: " << egz << endl;
+        }
+        else {
+            cout << "\n Iveskite " << i + 1 << " studento pazymius, suvedus visus pazymius irasykite 0\n";
+            int nulis = 1;
+            while (nulis != 0) {
+                int paz;
+                cin >> paz;
+                skaitymoKlaidosPaz(paz, n);
+                if (paz == 0) nulis = 0;
+                else {
+                    nd.push_back(paz);
+                    n++;
+                    nd.reserve(n);
+                    cout << "Ivedete " << n << " pazymi(-ius)" << endl;
+                }
+            }
+            cout << "\n Iveskite " << i + 1 << " studento egzamino rezultata \n";
+            cin >> egz;
+            skaitymoKlaidosPaz(egz, -1);
+        }
+
+        stud.setVardas(Vardas);
+        stud.setPavarde(Pavarde);
+        stud.setNDskaicius(n);
+        stud.setND(nd);
+        stud.setEgzaminas(egz);
+
         grupe.push_back(stud);
-        stud.nd.clear();
+        nd.clear();
     }
-}
-
-void autogen(studentas& stud, int i)
-{
-    cout << "\n" << i + 1 << " studento atsitiktinai sugeneruoti pazymiai: \n";
-    stud.n = autosk(1, 15);
-    stud.nd.reserve(stud.n);
-    for (int j = 0; j < stud.n; j++) {
-        int random;
-        random = autosk(1, 10);
-        cout << random << " ";
-        stud.vid = stud.vid + (float)random;
-        stud.nd.push_back(random);
-    }
-    cout << endl;
-    stud.egz = autosk(1, 10);
-    cout << "\n" << i + 1 << " studento atsitiktinai sugeneruotas egzamino balas: " << stud.egz << endl;
 }
 
 int autosk(int nuo, int iki)
@@ -125,28 +142,6 @@ int autosk(int nuo, int iki)
     return sk;
 }
 
-void pazymiai(studentas& stud, int i)
-{
-    cout << "\n Iveskite " << i + 1 << " studento pazymius, suvedus visus pazymius irasykite 0\n";
-    int nulis = 1;
-    while (nulis != 0) {
-        int paz;
-        cin >> paz;
-        skaitymoKlaidosPaz(paz, stud.n);
-        stud.vid = stud.vid + (float)paz;
-        if (paz == 0) nulis = 0;
-        else {
-            stud.nd.push_back(paz);
-            stud.n++;
-            stud.nd.reserve(stud.n);
-            cout << "Ivedete " << stud.n << " pazymi(-ius)" << endl;
-        }
-    }
-    cout << "\n Iveskite " << i + 1 << " studento egzamino rezultata \n";
-    cin >> stud.egz;
-    skaitymoKlaidosPaz(stud.egz, -1);
-}
-
 void isvedimas(vector<studentas> grupe, int VidArMed)
 {
     const char separator = ' ';
@@ -154,7 +149,7 @@ void isvedimas(vector<studentas> grupe, int VidArMed)
     const int PavSimb = 15;
     const int GalutSimb = 16;
 
-    sort(grupe.begin(), grupe.end(), compareTwoStudents);
+    sort(grupe.begin(), grupe.end(), studentas::compare);
     cout << endl;
     cout << left << setw(VardSimb) << setfill(separator) << "Vardas";
     cout << left << setw(PavSimb) << setfill(separator) << "Pavarde";
@@ -162,21 +157,10 @@ void isvedimas(vector<studentas> grupe, int VidArMed)
     else cout << left << setw(GalutSimb) << setfill(separator) << "Galutinis (Vid.)" << endl;
     cout << string(VardSimb + PavSimb + GalutSimb, '-') << endl;
     for (auto& tt : grupe) {
-        cout << left << setw(VardSimb) << setfill(separator) << tt.Vardas;
-        cout << left << setw(PavSimb) << setfill(separator) << tt.Pavarde;
-        cout << left << setw(GalutSimb) << setfill(separator) << fixed << setprecision(2) << tt.galutinis << endl;
+        cout << left << setw(VardSimb) << setfill(separator) << tt.getVardas();
+        cout << left << setw(PavSimb) << setfill(separator) << tt.getPavarde();
+        cout << left << setw(GalutSimb) << setfill(separator) << fixed << setprecision(2) << tt.getGalutinis() << endl;
     }
-}
-
-bool compareTwoStudents(studentas a, studentas b)
-{
-    if (a.Vardas != b.Vardas)
-        return a.Vardas.compare(b.Vardas) < 0;
-
-    if (a.Pavarde != b.Pavarde)
-        return a.Pavarde.compare(b.Pavarde) < 0;
-
-    return (a.galutinis > b.galutinis);
 }
 
 void irasymas(string name, vector<studentas> grupe, int VidArMed)
@@ -187,16 +171,16 @@ void irasymas(string name, vector<studentas> grupe, int VidArMed)
     const int GalutSimb = 16;
     ofstream f(name);
 
-    sort(grupe.begin(), grupe.end(), compareTwoStudents);
+    sort(grupe.begin(), grupe.end(), studentas::compare);
     f << left << setw(VardSimb) << setfill(separator) << "Vardas";
     f << left << setw(PavSimb) << setfill(separator) << "Pavarde";
     if (VidArMed == 1) f << left << setw(GalutSimb) << setfill(separator) << "Galutinis (Med.)" << endl;
     else f << left << setw(GalutSimb) << setfill(separator) << "Galutinis (Vid.)" << endl;
     f << string(VardSimb + PavSimb + GalutSimb, '-') << endl;
     for (auto& tt : grupe) {
-        f << left << setw(VardSimb) << setfill(separator) << tt.Vardas;
-        f << left << setw(PavSimb) << setfill(separator) << tt.Pavarde;
-        f << left << setw(GalutSimb) << setfill(separator) << fixed << setprecision(2) << tt.galutinis << endl;
+        f << left << setw(VardSimb) << setfill(separator) << tt.getVardas();
+        f << left << setw(PavSimb) << setfill(separator) << tt.getPavarde();
+        f << left << setw(GalutSimb) << setfill(separator) << fixed << setprecision(2) << tt.getGalutinis() << endl;
     }
     f.close();
 }
@@ -207,7 +191,7 @@ void padalinimas(vector<studentas>& grupe, vector<studentas>& grupe1)
     int sk1 = 0;
     int sk2 = 0;
     for (auto& tt : grupe) {
-        if (tt.galutinis < 5) {
+        if (tt.getGalutinis() < 5) {
             grupe1.push_back(tt);
             sk1++;
             grupe1.reserve(sk1);
@@ -227,7 +211,7 @@ void padalinimas1(vector<studentas> grupe, vector<studentas>& grupe1, vector<stu
     int sk1 = 0;
     int sk2 = 0;
     for (auto& tt : grupe) {
-        if (tt.galutinis < 5) {
+        if (tt.getGalutinis() < 5) {
             grupe1.push_back(tt);
             sk1++;
             grupe1.reserve(sk1);
@@ -241,19 +225,19 @@ void padalinimas1(vector<studentas> grupe, vector<studentas>& grupe1, vector<stu
 }
 
 void padalinimas2(vector<studentas>& grupe, vector<studentas>& grupe1)
-{ 
+{
     vector<studentas> grupe2;
     int sk1 = 0;
     for (auto& tt : grupe) {
-        if (tt.galutinis < 5) {
+        if (tt.getGalutinis() < 5) {
             grupe1.push_back(tt);
             sk1++;
-            grupe1.reserve(sk1); 
-            
+            grupe1.reserve(sk1);
+
         }
     }
-    grupe.erase(std::remove_if(grupe.begin(), grupe.end(), [&](studentas const& studentas) {
-        return studentas.galutinis < 5; }), grupe.end());
+    grupe.erase(std::remove_if(grupe.begin(), grupe.end(), [&](studentas& studentas) {
+        return studentas.getGalutinis() < 5; }), grupe.end());
 }
 
 void generavimas(string txt, int sk, int& ndsk)
@@ -265,6 +249,12 @@ void generavimas(string txt, int sk, int& ndsk)
     const int PavSimb = 15;
     const int NdSimb = 5;
 
+    string Vardas;
+    string Pavarde;
+    vector <int> nd;
+    int n = 0;
+    int egz;
+
     ofstream f(txt);
 
     grupe.reserve(sk);
@@ -274,18 +264,21 @@ void generavimas(string txt, int sk, int& ndsk)
 
     for (int i = 0; i < sk; i++) {
         studentas stud;
-        stud.n = ndsk;
-        stud.nd.reserve(stud.n);
-        zmogausVP(stud.Vardas, stud.Pavarde);
-        for (int j = 0; j < stud.n; j++) {
+        n = ndsk;
+        zmogausVP(Vardas, Pavarde);
+        for (int j = 0; j < n; j++) {
             int random;
             random = autosk(1, 10);
-            stud.vid = stud.vid + (float)random;
-            stud.nd.push_back(random);
+            nd.push_back(random);
         }
-        stud.egz = autosk(1, 10);
+        egz = autosk(1, 10);
+        stud.setVardas(Vardas);
+        stud.setPavarde(Pavarde);
+        stud.setNDskaicius(n);
+        stud.setND(nd);
+        stud.setEgzaminas(egz);
         grupe.push_back(stud);
-        stud.nd.clear();
+        nd.clear();
     }
 
     f << left << setw(VardSimb) << setfill(separator) << "Vardas";
@@ -294,10 +287,10 @@ void generavimas(string txt, int sk, int& ndsk)
     f << "Egz." << endl;
 
     for (auto& tt : grupe) {
-        f << left << setw(VardSimb) << setfill(separator) << tt.Vardas;
-        f << left << setw(PavSimb) << setfill(separator) << tt.Pavarde;
-        for (auto& ss : tt.nd) f << left << setw(NdSimb) << ss;
-        f << tt.egz;
+        f << left << setw(VardSimb) << setfill(separator) << tt.getVardas();
+        f << left << setw(PavSimb) << setfill(separator) << tt.getPavarde();
+        for (auto& ss : tt.getND()) f << left << setw(NdSimb) << ss;
+        f << tt.getEgzaminas();
         if (&tt != &grupe.back()) f << endl;
     }
 
