@@ -1,5 +1,5 @@
 #pragma once
-#include "lstudentas.h"
-#include "studentas.h"
+#include "listai.h"
+#include "vektoriai.h"
 
 void test(string txt, int duomsk, int StudSkai, int VidArMed);
