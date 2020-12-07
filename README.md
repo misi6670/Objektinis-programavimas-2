@@ -3,7 +3,7 @@
 
 * [V1.0 versija](https://github.com/misi6670/Objektinis-programavimas/releases/tag/V1.0) 
 Programa parašyta naudojant struktūrą "studentas".
-* [V1.1 versija](https://github.com/misi6670/Objektinis-programavimas/releases/tag/V1.1) 
+* [V1.1 versija](https://github.com/misi6670/Objektinis-programavimas-2/releases/tag/V1.1) 
 Šioje realizacijoje vietoje struktūros "studentas" naudojama sukurta klasė "Studentas". Vartotojui pasirinkus, galima atlikti programos veikimo greičio (spartos) analizę. Testas atliekamas su 2 failais iš 100000, 1000000 įrašų, testo metu jie yra sugeneruojami ir pasibaigus testavimui ištrinami. Matavimai atliekami su kiekvienu failu. Matuojamas: studentų rūšiavimas į dvi grupes/kategorijas greičiausia strategija, naudojant vektorio tipo konteinerį.
 
 Šioje realizacijoje pridėti operatoriai klasėms "Studentas", pagal 3 taisyklę ("Rule of three"), - destruktorius, kopijavimo konstruktorius ir kopijavimo priskirties operatorius.
