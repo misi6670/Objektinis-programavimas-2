@@ -20,18 +20,24 @@ Programa parašyta naudojant struktūrą "studentas".
 
 Testas 1 (Release), galutinis balas skaičiuojamas pagal vidurkį:
 
-| Programos versija | 100000 įrašų (namų darbų skaičius: 7) | 1000000 įrašų (namų darbų skaičius: 4) |
-| ---------- | -------------------- | ------------- |
-| V1.0 | 0.0071902 | 0.06781 |
-| V1.1 | 0.024098  | 0.202245 |
+| Programos versija | Flag | 100000 įrašų (namų darbų skaičius: 7) | 1000000 įrašų (namų darbų skaičius: 4) |
+| ---------- | ---- | ---------------- | ------------- |
+| V1.0 | none | 0.0071902 | 0.06781 |
+| V1.1 | none | 0.024098 | 0.202245 |
+| V1.1 | /O1 | 0.024781 | 0.201625 |
+| V1.1 | /O2 | 0.0281015 | 0.20524 |
+| V1.1 | /Ox | 0.0239226 | 0.203597 |
 
 
 Testas 2 (Release), galutinis balas skaičiuojamas pagal medianą:
 
-| Programos versija | 100000 įrašų (namų darbų skaičius: 7) | 1000000 įrašų (namų darbų skaičius: 4) |
-| ---------- | -------------------- | ------------- |
-| V1.0 | 0.0071773 | 0.0684974 |
-| V1.1 | 0.0175735 | 0.198012 |
+| Programos versija | Flag | 100000 įrašų (namų darbų skaičius: 7) | 1000000 įrašų (namų darbų skaičius: 4) |
+| ---------- | -----| --------------- | ------------- |
+| V1.0 | none | 0.0071773 | 0.0684974 |
+| V1.1 | none | 0.0175735 | 0.198012 |
+| V1.1 | /O1 | 0.0181742 | 0.2048 |
+| V1.1 | /O2 | 0.018943 | 0.196963 |
+| V1.1 | /Ox | 0.0175677 | 0.201092 |
 
 ## Testavimo sistemos parametrai
 
