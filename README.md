@@ -1,43 +1,20 @@
-# Programos versija V1.1
+# Programos versija V1.2
 Ši programa nuskaito vartotojų įvedamus duomenis (studento vardą ir pavardę, namų darbų ir egzamino rezultatą). Baigus duomenų įvedimą, suskaičiuoja galutinį balą ir juos pateikia į ekraną. Galutinis balas skaičiuojamas pagal vartotojo pasirinkimą - naudojant vidurkį arba medianą ir yra pateikiamas dviejų skaičių po kablelio tikslumu. Studentai padalinami į dvi kategorijas - "išlaikiusieji" (studentai, kurių galutinis balas >= 5.0) ir "neišlaikiusieji" (studentai, kurių galutinis balas < 5.0) - ir atitinkamai išvedami į du naujus failus - "islaike.txt" ir "neislaike.txt". Studentai išvedami surūšiuoti pagal vardus, pavardes ir galutinį pažymį. Vartotojui pasirinkus, studento pažymius galima generuoti atsitiktinai, duomenis taip pat galima nuskaityti iš failo.
 
+* [V1.0 versija](https://github.com/misi6670/Objektinis-programavimas/releases/tag/V1.0) 
+Programa parašyta naudojant struktūrą "studentas".
+* [V1.1 versija](https://github.com/misi6670/Objektinis-programavimas/releases/tag/V1.1) 
 Šioje realizacijoje vietoje struktūros "studentas" naudojama sukurta klasė "Studentas". Vartotojui pasirinkus, galima atlikti programos veikimo greičio (spartos) analizę. Testas atliekamas su 2 failais iš 100000, 1000000 įrašų, testo metu jie yra sugeneruojami ir pasibaigus testavimui ištrinami. Matavimai atliekami su kiekvienu failu. Matuojamas: studentų rūšiavimas į dvi grupes/kategorijas greičiausia strategija, naudojant vektorio tipo konteinerį.
+
+Šioje realizacijoje pridėti operatoriai klasėms "Studentas", pagal 3 taisyklę ("Rule of three"), - destruktorius, kopijavimo konstruktorius ir kopijavimo priskirties operatorius.
 
 1. Naudojamos bibliotekos aprašytos ***klaidos.h***, ***listai.h***, ***lstudentai.h***, ***studentai.h***, ***testavimas.h*** ir ***vektoriai.h*** failuose
 2. Naudojamos funkcijos surašytos ***klaidos.cpp***, ***listai.cpp***, ***lstudentai.cpp***, ***studentai.cpp***, ***testavimas.cpp*** ir ***vektoriai.cpp*** failuose
-3. **testavimas.h** ir **vektoriai.h** bibliotekos naudojamos **V1.1.cpp** faile
+3. **testavimas.h** ir **vektoriai.h** bibliotekos naudojamos **V1.2.cpp** faile
 4. **klaidos.h** biblioteka naudojama **listai.h** ir **vektoriai.h** failuose
 5. **listai.h** ir **vektoriai.h** bibliotekos naudojamos **testavimas.h** faile
 6. **lstudentas.h** biblioteka naudojama **listai.h** faile
 7. **studentas.h** biblioteka naudojama **vektoriai.h** faile
-
-* [V1.0 versija](https://github.com/misi6670/Objektinis-programavimas/releases/tag/V1.0) 
-Programa parašyta naudojant struktūrą "studentas".
-
-# Programos veikimo greičio (spartos) analizė
-## Pagal studentų dalijimo į dvi kategorijas strategijas
-* Greičiausia strategija: Bendro studentų konteinerio (vector ir list) skaidymas (rūšiavimas) panaudojant tik vieną naują konteinerį: "neišlaikę". Tokiu būdu, jei studentas yra neišlaikęs, jį turime įkelti į naująjį "neišlaikiusiųjų" konteinerį ir ištrinti iš bendro studentai konteinerio. Po šio žingsnio studentai konteineryje liks vien tik išlaikę.
-
-Testas 1 (Release), galutinis balas skaičiuojamas pagal vidurkį:
-
-| Programos versija | 100000 įrašų (namų darbų skaičius: 7) | 1000000 įrašų (namų darbų skaičius: 4) |
-| ---------- | -------------------- | ------------- |
-| V1.0 | 0.0071902 | 0.06781 |
-| V1.1 | 0.024098  | 0.202245 |
-
-
-Testas 2 (Release), galutinis balas skaičiuojamas pagal medianą:
-
-| Programos versija | 100000 įrašų (namų darbų skaičius: 7) | 1000000 įrašų (namų darbų skaičius: 4) |
-| ---------- | -------------------- | ------------- |
-| V1.0 | 0.0071773 | 0.0684974 |
-| V1.1 | 0.0175735 | 0.198012 |
-
-## Testavimo sistemos parametrai
-
-* CPU -	AMD Ryzen 5 3500 6-Core Processor;
-* RAM - 16,0 GB DDR4;
-* SSD (480GB).
 
 # Programos naudojimosi instrukcija
 Paleidus programą, reikia pasirinkti, ar norite atlikti testavimą.
