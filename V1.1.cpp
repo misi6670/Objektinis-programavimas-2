@@ -1,9 +1,7 @@
 // V1.1.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include "studentas.h"
 #include "vektoriai.h"
-#include "lstudentas.h"
 #include "testavimas.h"
 
 using std::cout;

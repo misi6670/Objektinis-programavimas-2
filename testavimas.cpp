@@ -10,7 +10,6 @@ void test(string txt, int duomsk, int StudSkai, int VidArMed)
     cout << endl;
     generavimas(txt + ".txt", duomsk, ndsk);
     cout << "Failo is " << duomsk << " irasu (namu darbu skaicius: " << ndsk << ") testas: " << endl;
-    cout << endl;
 
     nuskaitymas(txt, grupe, StudSkai, VidArMed);
     auto start = high_resolution_clock::now();
