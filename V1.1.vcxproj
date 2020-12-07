@@ -140,16 +140,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="klaidos.cpp" />
+    <ClCompile Include="listai.cpp" />
     <ClCompile Include="lstudentas.cpp" />
     <ClCompile Include="studentas.cpp" />
     <ClCompile Include="testavimas.cpp" />
     <ClCompile Include="V1.1.cpp" />
+    <ClCompile Include="vektoriai.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="klaidos.h" />
+    <ClInclude Include="listai.h" />
     <ClInclude Include="lstudentas.h" />
     <ClInclude Include="studentas.h" />
     <ClInclude Include="testavimas.h" />
+    <ClInclude Include="vektoriai.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

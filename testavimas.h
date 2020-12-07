@@ -1,4 +1,6 @@
 #pragma once
+#include "vektoriai.h"
+#include "listai.h"
 #include "lstudentas.h"
 #include "studentas.h"
 

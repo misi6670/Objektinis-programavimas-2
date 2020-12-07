@@ -2,6 +2,7 @@
 //
 
 #include "studentas.h"
+#include "vektoriai.h"
 #include "lstudentas.h"
 #include "testavimas.h"
 
@@ -28,7 +29,7 @@ using std::map;
 
 int main()
 {
-    vector <studentas> grupe;
+    vector <Studentas> grupe;
     int StudSkai = 0;
     int VidArMed = 0;
     int AutoGen = 0;
@@ -48,20 +49,12 @@ int main()
     skaitymoKlaidos(VidArMed);
 
     if (Testavimas == 1) {
-        test("studentai1000", 1000, StudSkai, VidArMed);
-        if (remove("studentai1000.txt") == 0) remove("studentai1000.txt");
-
-        test("studentai10000", 10000, StudSkai, VidArMed);
-        if (remove("studentai10000.txt") == 0) remove("studentai10000.txt");
-
         test("studentai100000", 100000, StudSkai, VidArMed);
         if (remove("studentai100000.txt") == 0) remove("studentai100000.txt");
 
         test("studentai1000000", 1000000, StudSkai, VidArMed);
         if (remove("studentai1000000.txt") == 0) remove("studentai1000000.txt");
 
-        test("studentai10000000", 10000000, StudSkai, VidArMed);
-        if (remove("studentai10000000.txt") == 0) remove("studentai10000000.txt");
     }
     else {
         cout << "\n Noredami duomenis nuskaityti is failo iveskite '1'; \n";
@@ -89,7 +82,7 @@ int main()
         }
 
         isvedimas(grupe, VidArMed);
-        vector <studentas> grupe1;
+        vector <Studentas> grupe1;
         padalinimas(grupe, grupe1);
         if (remove("neislaike.txt") == 0) remove("neislaike.txt");
         if (remove("islaike.txt") == 0) remove("islaike.txt");

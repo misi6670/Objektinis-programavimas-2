@@ -1,18 +1,12 @@
 #pragma once
 
-#include "klaidos.h"
 #include <iostream>
 #include <string>
 #include <vector>
 #include <iomanip>
 #include <algorithm>
-#include <fstream>
-#include <chrono>
-#include <random>
-#include <map>
 
 using std::cout;
-using std::cin;
 using std::string;
 using std::vector;
 using std::endl;
@@ -22,95 +16,73 @@ using std::setfill;
 using std::fixed;
 using std::setprecision;
 using std::sort;
-using std::ifstream;
-using std::ofstream;
-using std::getline;
-using std::ios;
 using std::count;
-using std::to_string;
-using std::chrono::high_resolution_clock;
-using std::chrono::duration;
-using std::map;
 
-class studentas
+class Studentas
 {
 private:
-    string Vardas;
-    string Pavarde;
-    vector <int> nd;
-    int n;
-    int egz;
-    float galutinis;
-    float vid;
-    float med;
-    int vidarmed;
+    string Vardas_;
+    string Pavarde_;
+    vector <int> nd_;
+    int n_;
+    int egz_;
+    float galutinis_;
+    float vid_;
+    float med_;
+    int vidarmed_;
 public:
-    studentas() {
-        Vardas = "";
-        Pavarde = "";
-        n = 0;
-        egz = 0;
-        galutinis = 0;
-        vid = 0;
-        med = 0;
-        vidarmed = 0;
+    Studentas() {
+        Vardas_ = "";
+        Pavarde_ = "";
+        n_ = 0;
+        egz_ = 0;
+        galutinis_ = 0;
+        vid_ = 0;
+        med_ = 0;
+        vidarmed_ = 0;
     }
-    studentas(int vidmed, string vard, string pav, int sk, vector<int> ndv, int egzam) {
-        vidarmed = vidmed;
-        Vardas = vard;
-        Pavarde = pav;
-        n = sk;
-        nd = ndv;
-        nd.reserve(n);
-        egz = egzam;
-        vid = countVidurkis(); 
-        med = countMediana();
+    Studentas(int vidmed, string vardas, string pavarde, int ndsk, vector<int> nd, int egzaminas) {
+        vidarmed_ = vidmed;
+        Vardas_ = vardas;
+        Pavarde_ = pavarde;
+        n_ = ndsk;
+        nd_ = nd;
+        nd_.reserve(n_);
+        egz_ = egzaminas;
+        vid_ = countVidurkis(); 
+        med_ = countMediana();
         setGalutinis();
     }
-    ~studentas() { nd.clear(); }
-    void setVidarmed(int vam) { vidarmed = vam; }
-    int getVidarmed() const { return vidarmed; }
-    void setVardas(string vard) { Vardas = vard; }
-    string getVardas() const { return Vardas; }
-    void setPavarde(string pavard) { Pavarde = pavard; }
-    string getPavarde() const { return Pavarde; }
-    void setND(vector <int> paz) { nd = paz; nd.reserve(n); vid = countVidurkis(); med = countMediana(); }
-    vector<int> getND() const { return nd; }
-    void setNDskaicius(int paz) { n = paz; }
-    int getNDskaicius() const { return n; }
-    void setEgzaminas(int paz) { egz = paz; }
-    int getEgzaminas() const { return egz; }
-    void setGalutinis() { if (vidarmed == 1) galutinis = countGalutinis(med); else galutinis = countGalutinis(vid); }
-    float getGalutinis() const { return galutinis; }
-    float countVidurkis() { float suma = 0; for (float a : nd) suma = suma + a; return vid = suma / n; }
-    float countMediana() {
-        sort(nd.begin(), nd.end());
-        if (n % 2 != 0) return med = (float)nd.at(n / 2);
-        else {
-            int m;
-            m = nd.at((n - 1) / 2) + nd.at(n / 2);
-            return med = (float)m / 2.0;
-        }
+    Studentas(string vardas, string pavarde, int ndsk, vector<int> nd, int egzaminas) {
+        vidarmed_ = 0;
+        Vardas_ = vardas;
+        Pavarde_ = pavarde;
+        n_ = ndsk;
+        nd_ = nd;
+        nd_.reserve(n_);
+        egz_ = egzaminas;
+        vid_ = 0;
+        med_ = 0;
+        galutinis_ = 0;
     }
-    float countGalutinis(float vam) { galutinis = vam * 0.4 + (float)egz * 0.6; return galutinis; }
-    bool operator <(const studentas & a) const {
-        if (getVardas() != a.getVardas())
-            return getVardas().compare(a.getVardas()) < 0;
-
-        if (getPavarde() != a.getPavarde())
-            return getPavarde().compare(a.getPavarde()) < 0;
-
-        return (getGalutinis() > a.getGalutinis());
-    }
+    ~Studentas() { nd_.clear(); }
+    void setVidarmed(int vam) { vidarmed_ = vam; }
+    int getVidarmed() const { return vidarmed_; }
+    void setVardas(string vardas) { Vardas_ = vardas; }
+    string getVardas() const { return Vardas_; }
+    void setPavarde(string pavarde) { Pavarde_ = pavarde; }
+    string getPavarde() const { return Pavarde_; }
+    void setND(vector <int> nd) { nd_ = nd; nd_.reserve(n_); vid_ = countVidurkis(); med_ = countMediana(); }
+    vector<int> getND() const { return nd_; }
+    void setNDskaicius(int ndsk) { n_ = ndsk; }
+    int getNDskaicius() const { return n_; }
+    void setEgzaminas(int egzaminas) { egz_ = egzaminas; }
+    int getEgzaminas() const { return egz_; }
+    void setGalutinis() { if (vidarmed_ == 1) galutinis_ = countGalutinis(med_); else galutinis_ = countGalutinis(vid_); }
+    float getGalutinis() const { return galutinis_; }
+    float countVidurkis();
+    float countMediana();
+    float countGalutinis(float vam);
+    bool operator <(const Studentas& a) const;
+    void isvedimas(char separator, int VardSimb, int PavSimb, int GalutSimb);
 };
-
-void nuskaitymas(string txtname, vector<studentas>& grupe, int& StudSkai, int VidArMed);
-void ivedimas(vector<studentas>& grupe, int StudSkai, int VidArMed, int AutoGen);
-int autosk(int nuo, int iki);
-void isvedimas(vector<studentas> grupe, int VidArMed);
-void irasymas(string name, vector<studentas> grupe, int VidArMed);
-void padalinimas(vector<studentas>& grupe, vector<studentas>& grupe1);
-void padalinimas1(vector<studentas> grupe, vector<studentas>& grupe1, vector<studentas>& grupe2);
-void padalinimas2(vector<studentas>& grupe, vector<studentas>& grupe1);
-void generavimas(string txt, int sk, int& ndsk);
-void zmogausVP(string& vardas, string& pavarde);
