@@ -20,28 +20,18 @@ Programa parašyta naudojant struktūrą "studentas".
 
 Testas 1 (Release), galutinis balas skaičiuojamas pagal vidurkį:
 
-| Programos versija | 100000 įrašų (namų darbų skaičius: 5) | 1000000 įrašų (namų darbų skaičius: 2) |
+| Programos versija | 100000 įrašų (namų darbų skaičius: 7) | 1000000 įrašų (namų darbų skaičius: 4) |
 | ---------- | -------------------- | ------------- |
-| V1.0 | 0.0395566 | 0.372931 |
-| V1.1 | 0.100894 | 0.688984 |
+| V1.0 | 0.0071902 | 0.06781 |
+| V1.1 | 0.024098  | 0.202245 |
 
-| Programos versija | V1.0 | V1.1 |
-| ---------- | -------------------- | ------------- |
-| 100000 įrašų (namų darbų skaičius: 5) | 0.0395566 | 0.372931 |
-| 1000000 įrašų (namų darbų skaičius: 2) | 0.100894 | 0.688984 |
 
 Testas 2 (Release), galutinis balas skaičiuojamas pagal medianą:
 
-| Programos versija | 100000 įrašų (namų darbų skaičius: 5) | 1000000 įrašų (namų darbų skaičius: 2) |
+| Programos versija | 100000 įrašų (namų darbų skaičius: 7) | 1000000 įrašų (namų darbų skaičius: 4) |
 | ---------- | -------------------- | ------------- |
-| V1.0 | 0.0395566 | 0.372931 |
-| V1.1 | 0.100894 | 0.688984 |
-
-| Programos versija | V1.0 | V1.1 |
-| ---------- | -------------------- | ------------- |
-| 100000 įrašų (namų darbų skaičius: 5) | 0.0395566 | 0.372931 |
-| 1000000 įrašų (namų darbų skaičius: 2) | 0.100894 | 0.688984 |
-
+| V1.0 | 0.0071773 | 0.0684974 |
+| V1.1 | 0.0175735 | 0.198012 |
 
 ## Testavimo sistemos parametrai
 
@@ -58,12 +48,12 @@ Norėdami, kad galutinis balas būtų skaičiuojamas pagal medianą, įveskite '
 Tuomet yra atliekamas testas ir išvedami rezultatai į ekraną tokiu pavidalu:
 
 ```
-Failo is 100000 irasu (namu darbu skaicius: 10) testas:
-100000 studentu rusiavimas i dvi grupes/kategorijas naudojant vektoriu ir greiciausia strategija uztruko: 0.96446 s
+Failo is 100000 irasu (namu darbu skaicius: 8) testas:
+100000 studentu rusiavimas i dvi grupes/kategorijas naudojant vektoriu ir greiciausia strategija uztruko: 0.024373 s
 
 
-Failo is 1000000 irasu (namu darbu skaicius: 4) testas:
-1000000 studentu rusiavimas i dvi grupes/kategorijas naudojant vektoriu ir greiciausia strategija uztruko: 8.09263 s
+Failo is 1000000 irasu (namu darbu skaicius: 3) testas:
+1000000 studentu rusiavimas i dvi grupes/kategorijas naudojant vektoriu ir greiciausia strategija uztruko: 0.201436 s
 ```
 
 Testas atliekamas su failais iš 1000, 10000, 100000, 1000000 ir 10000000 įrašų, namų darbų skaičius generuojamas atsitiktinai ir kiekvienam failui skiriasi.
