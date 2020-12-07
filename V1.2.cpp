@@ -1,4 +1,4 @@
-// V1.1.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// V1.2.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include "vektoriai.h"
