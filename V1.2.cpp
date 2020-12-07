@@ -52,7 +52,6 @@ int main()
 
         test("studentai1000000", 1000000, StudSkai, VidArMed);
         if (remove("studentai1000000.txt") == 0) remove("studentai1000000.txt");
-
     }
     else {
         cout << "\n Noredami duomenis nuskaityti is failo iveskite '1'; \n";

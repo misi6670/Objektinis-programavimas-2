@@ -66,6 +66,8 @@ public:
         galutinis_ = 0;
     }
     ~Studentas() { nd_.clear(); }
+    Studentas(const Studentas& stud);
+    Studentas& operator=(const Studentas& stud);
     void setVidarmed(int vam) { vidarmed_ = vam; }
     int getVidarmed() const { return vidarmed_; }
     void setVardas(string vardas) { Vardas_ = vardas; }

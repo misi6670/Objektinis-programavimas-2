@@ -1,5 +1,41 @@
 #include "lstudentas.h"
 
+Lstudentas::Lstudentas(const Lstudentas& stud)
+    : Vardas_{ stud.Vardas_ },
+    Pavarde_{ stud.Pavarde_ },
+    nd_{ stud.nd_ },
+    n_{ stud.n_ },
+    egz_{ stud.egz_ },
+    galutinis_{ stud.galutinis_ },
+    vid_{ stud.vid_ },
+    med_{ stud.med_ },
+    vidarmed_{ stud.vidarmed_ } {
+    Vardas_ = stud.Vardas_;
+    Pavarde_ = stud.Pavarde_;
+    nd_ = stud.nd_;
+    n_ = stud.n_;
+    egz_ = stud.egz_;
+    galutinis_ = stud.galutinis_;
+    vid_ = stud.vid_;
+    med_ = stud.med_;
+    vidarmed_ = stud.vidarmed_;
+}
+
+Lstudentas& Lstudentas::operator=(const Lstudentas& stud) {
+    if (&stud == this) return *this;
+    nd_.clear();
+    Vardas_ = stud.Vardas_;
+    Pavarde_ = stud.Pavarde_;
+    nd_ = stud.nd_;
+    n_ = stud.n_;
+    egz_ = stud.egz_;
+    galutinis_ = stud.galutinis_;
+    vid_ = stud.vid_;
+    med_ = stud.med_;
+    vidarmed_ = stud.vidarmed_;
+    return *this;
+}
+
 float Lstudentas::countVidurkis() { 
     float suma = 0; 
     for (float a : nd_) suma = suma + a; 
