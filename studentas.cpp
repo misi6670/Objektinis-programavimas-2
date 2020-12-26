@@ -1,8 +1,7 @@
 #include "studentas.h"
 
 Studentas::Studentas(const Studentas& stud)
-    : Vardas_{ stud.Vardas_ },
-    Pavarde_{ stud.Pavarde_ },
+    : Zmogus(stud.Vardas_, stud.Pavarde_),
     nd_{ stud.nd_ },
     n_{ stud.n_ },
     egz_{ stud.egz_ },
@@ -71,7 +70,6 @@ void Studentas::isvedimas(char separator, int VardSimb, int PavSimb, int GalutSi
     const int VardSimb_ = VardSimb;
     const int PavSimb_ = PavSimb;
     const int GalutSimb_ = GalutSimb;
-    cout << left << setw(VardSimb_) << setfill(separator_) << getVardas();
-    cout << left << setw(PavSimb_) << setfill(separator_) << getPavarde();
+    Zmogus::isvedimas(separator_, VardSimb_, PavSimb_);
     cout << left << setw(GalutSimb_) << setfill(separator_) << fixed << setprecision(2) << getGalutinis() << endl;
 }

@@ -1,28 +1,16 @@
 #pragma once
 
-#include <iostream>
-#include <string>
+#include"zmogus.h"
 #include <vector>
-#include <iomanip>
 #include <algorithm>
 
-using std::cout;
-using std::string;
 using std::vector;
-using std::endl;
-using std::left;
-using std::setw;
-using std::setfill;
-using std::fixed;
-using std::setprecision;
 using std::sort;
 using std::count;
 
-class Studentas
+class Studentas : public Zmogus
 {
 private:
-    string Vardas_;
-    string Pavarde_;
     vector <int> nd_;
     int n_;
     int egz_;
@@ -70,10 +58,6 @@ public:
     Studentas& operator=(const Studentas& stud);
     void setVidarmed(int vam) { vidarmed_ = vam; }
     int getVidarmed() const { return vidarmed_; }
-    void setVardas(string vardas) { Vardas_ = vardas; }
-    string getVardas() const { return Vardas_; }
-    void setPavarde(string pavarde) { Pavarde_ = pavarde; }
-    string getPavarde() const { return Pavarde_; }
     void setND(vector <int> nd) { nd_ = nd; nd_.reserve(n_); vid_ = countVidurkis(); med_ = countMediana(); }
     vector<int> getND() const { return nd_; }
     void setNDskaicius(int ndsk) { n_ = ndsk; }

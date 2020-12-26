@@ -1,28 +1,16 @@
 #pragma once
-
-#include <iostream>
-#include <string>
+ 
+#include "zmogus.h"
 #include <list>
-#include <iomanip>
 #include <algorithm>
 
-using std::cout;
-using std::string;
 using std::list;
-using std::endl;
-using std::left;
-using std::setw;
-using std::setfill;
-using std::fixed;
-using std::setprecision;
 using std::sort;
 using std::count;
 
-class Lstudentas
+class Lstudentas : public Zmogus
 {
 private:
-    string Vardas_;
-    string Pavarde_;
     list <int> nd_;
     int n_;
     int egz_;
@@ -48,6 +36,8 @@ public:
         n_ = ndsk;
         nd_ = nd;
         egz_ = egzaminas;
+        vid_ = countVidurkis();
+        med_ = countMediana();
         setGalutinis();
     }
     Lstudentas(string vardas, string pavarde, int ndsk, list<int> nd, int egzaminas) {
@@ -66,10 +56,6 @@ public:
     Lstudentas& operator=(const Lstudentas& stud);
     void setVidarmed(int vam) { vidarmed_ = vam; }
     int getVidarmed() const { return vidarmed_; }
-    void setVardas(string vardas) { Vardas_ = vardas; }
-    string getVardas() const { return Vardas_; }
-    void setPavarde(string pavarde) { Pavarde_ = pavarde; }
-    string getPavarde() const { return Pavarde_; }
     void setND(list <int> nd) { nd_ = nd; vid_ = countVidurkis(); med_ = countMediana(); }
     list<int> getND() const { return nd_; }
     void setNDskaicius(int ndsk) { n_ = ndsk; }
@@ -84,14 +70,3 @@ public:
     bool operator <(const Lstudentas& a) const;
     void isvedimas(char separator, int VardSimb, int PavSimb, int GalutSimb);
 };
-
-void lnuskaitymas(string txtname, list<Lstudentas>& grupe, int& StudSkai, int VidArMed);
-void livedimas(list<Lstudentas>& grupe, int StudSkai, int VidArMed, int AutoGen);
-int lautosk(int nuo, int iki);
-void lisvedimas(list<Lstudentas> grupe, int VidArMed);
-void lirasymas(string name, list<Lstudentas> grupe, int VidArMed);
-void lpadalinimas(list<Lstudentas>& grupe, list<Lstudentas>& grupe1);
-void lpadalinimas1(list<Lstudentas> grupe, list<Lstudentas>& grupe1, list<Lstudentas>& grupe2);
-void lpadalinimas2(list<Lstudentas>& grupe, list<Lstudentas>& grupe1);
-void lgeneravimas(string txt, int sk, int& ndsk);
-void lzmogausVP(string& vardas, string& pavarde);
