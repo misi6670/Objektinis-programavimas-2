@@ -12,9 +12,9 @@ Programa parašyta naudojant struktūrą "studentas".
 
 Šioje realizacijoje sukurta dokumentacija panaudojant Doxygen.
 
-1. Naudojamos bibliotekos aprašytos ***klaidos.h***, ***listai.h***, ***lstudentas.h***, ***studentai.h***, ***testavimas.h***, ***vektoriai.h*** ir ***zmogus.h*** failuose
-2. Naudojamos funkcijos surašytos ***klaidos.cpp***, ***listai.cpp***, ***lstudentas.cpp***, ***studentai.cpp***, ***testavimas.cpp***, ***vektoriai.cpp*** ir ***zmogus.cpp*** failuose
-3. **testavimas.h** ir **vektoriai.h** bibliotekos naudojamos **V1.5.cpp** faile
+1. Naudojamos bibliotekos aprašytos ***klaidos.h***, ***listai.h***, ***lstudentas.h***, ***studentas.h***, ***testavimas.h***, ***vektoriai.h*** ir ***zmogus.h*** failuose
+2. Naudojamos funkcijos surašytos ***klaidos.cpp***, ***listai.cpp***, ***lstudentas.cpp***, ***studentas.cpp***, ***testavimas.cpp***, ***vektoriai.cpp*** ir ***zmogus.cpp*** failuose
+3. **testavimas.h** ir **vektoriai.h** bibliotekos naudojamos **V2.0.cpp** faile
 4. **klaidos.h** biblioteka naudojama **listai.h** ir **vektoriai.h** failuose
 5. **listai.h** ir **vektoriai.h** bibliotekos naudojamos **testavimas.h** faile
 6. **lstudentas.h** biblioteka naudojama **listai.h** faile
