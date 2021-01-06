@@ -1,0 +1,263 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Programos versija V2.0"><param name="Local" value="md__r_e_a_d_m_e.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Programos naudojimosi instrukcija"><param name="Local" value="md__r_e_a_d_m_e.html#autotoc_md1"><param name="ImageNumber" value="11"></OBJECT>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Classes"><param name="Local" value="annotated.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class List"><param name="Local" value="annotated.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Lstudentas"><param name="Local" value="class_lstudentas.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Lstudentas"><param name="Local" value="class_lstudentas.html#aabdf02fbe0843b7bfcb89f6745de22bc"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Lstudentas"><param name="Local" value="class_lstudentas.html#a9035426186923271d234a9654121c3e7"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Lstudentas"><param name="Local" value="class_lstudentas.html#a8cba34b6b40a2540acba95a1fe35541d"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="~Lstudentas"><param name="Local" value="class_lstudentas.html#a93b30ec0bd841d977931e9984aa46d19"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Lstudentas"><param name="Local" value="class_lstudentas.html#a8760db01673d40f4f92bd282dbe0920b"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="countGalutinis"><param name="Local" value="class_lstudentas.html#a0187fb01c87bfa79e4fddbf14e3bce24"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="countMediana"><param name="Local" value="class_lstudentas.html#ac784c2b0f31a19ec28cd0576d08398e8"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="countVidurkis"><param name="Local" value="class_lstudentas.html#af8e08f6d13215ead0c01cf9893eeffb8"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="getEgzaminas"><param name="Local" value="class_lstudentas.html#abed0018bf57eb52809ef6cae90f1388f"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="getGalutinis"><param name="Local" value="class_lstudentas.html#a9100e6346c4b62dd85df90dbf3c7050c"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="getND"><param name="Local" value="class_lstudentas.html#a95625dfdfc2a415b3da0bbf6a90701fe"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="getNDskaicius"><param name="Local" value="class_lstudentas.html#a6bf29a2acdcf949dc83c57ec91c6a633"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="getVidarmed"><param name="Local" value="class_lstudentas.html#a886bd85d818e8e4065a75be3484f33e3"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="isvedimas"><param name="Local" value="class_lstudentas.html#a5b23a670c1e9645044de669d4a97078a"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="operator&lt;"><param name="Local" value="class_lstudentas.html#aecb9117aeb5a9efe711e1f50bc93b47f"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="operator="><param name="Local" value="class_lstudentas.html#a6c29c4b55eef75c60d527dfb4d1c6b5b"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="setEgzaminas"><param name="Local" value="class_lstudentas.html#a93d133d012a9b0be886a03bc007f5c4f"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="setGalutinis"><param name="Local" value="class_lstudentas.html#a33bd0d202578ffcf4d5d12b363f2ed40"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="setND"><param name="Local" value="class_lstudentas.html#a13463799f07c2f4cb386faa375bf0a44"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="setNDskaicius"><param name="Local" value="class_lstudentas.html#a7f91904114d04e814f173e1f05a27a0e"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="setVidarmed"><param name="Local" value="class_lstudentas.html#a49baa1953779d43a498a3aacdb90c94e"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Studentas"><param name="Local" value="class_studentas.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Studentas"><param name="Local" value="class_studentas.html#ab459e995e8c9b24cdc9aec5b09a66539"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Studentas"><param name="Local" value="class_studentas.html#aa0df6f99f4732311861aed3d5cd680b8"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Studentas"><param name="Local" value="class_studentas.html#ad04749e2b1ec46628cd3bef0aab1d31f"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="~Studentas"><param name="Local" value="class_studentas.html#a63e449e0f51a0b14340d02ee71b4be23"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Studentas"><param name="Local" value="class_studentas.html#af10e21a8512770f18df1eb1a04f054a3"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="countGalutinis"><param name="Local" value="class_studentas.html#a4a55bfa9ffd7b01c46597443669463ed"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="countMediana"><param name="Local" value="class_studentas.html#a3c5c9a9b79e682cf99ed01da89e693a2"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="countVidurkis"><param name="Local" value="class_studentas.html#afff717ed500744e1311e925f4f078907"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="getEgzaminas"><param name="Local" value="class_studentas.html#abe38c118e8e899b4de681f1d12adceab"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="getGalutinis"><param name="Local" value="class_studentas.html#a434c720883bfcc4c6e4608ddf0e2c1a3"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="getND"><param name="Local" value="class_studentas.html#a90c534e6c725497a0841f286fc0b85d2"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="getNDskaicius"><param name="Local" value="class_studentas.html#a820c622a9d40b292df8051032352bce3"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="getVidarmed"><param name="Local" value="class_studentas.html#a4ab6c64439b3cb86515f08e373bd8219"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="isvedimas"><param name="Local" value="class_studentas.html#a84195bfa6309f4ea7d21d6cc6c8f2942"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="operator&lt;"><param name="Local" value="class_studentas.html#a5de58490ffb0fd6f3fe5c0437c9f1c5e"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="operator="><param name="Local" value="class_studentas.html#ae8b7c23858a5af9a1114940982056602"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="operator=="><param name="Local" value="class_studentas.html#abc0cbaad2c1b75fa5347779a515a560b"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="setEgzaminas"><param name="Local" value="class_studentas.html#ac7fa2f1df9d544ac1fc050689d1928bc"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="setGalutinis"><param name="Local" value="class_studentas.html#a5619534aa98fe6e17f870a9edd8990f2"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="setND"><param name="Local" value="class_studentas.html#ad706f110869cd02e2eeef5c1e56e6099"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="setNDskaicius"><param name="Local" value="class_studentas.html#a521c308f57216de5f0f2f4f667ef3f55"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="setVidarmed"><param name="Local" value="class_studentas.html#aaecd14a20830aa6c3e183c8d46090ab2"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Zmogus"><param name="Local" value="class_zmogus.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Zmogus"><param name="Local" value="class_zmogus.html#aa7a8ba4d3c4778f9b35d59eef3e72574"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Zmogus"><param name="Local" value="class_zmogus.html#abcea2eb5f4c209f8623405a3d838f1c2"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Zmogus"><param name="Local" value="class_zmogus.html#ac137b6d449410ee45fe5992bb04ee129"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="~Zmogus"><param name="Local" value="class_zmogus.html#ac5615bf607a8f2f1b303ffa04328d24d"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="getPavarde"><param name="Local" value="class_zmogus.html#aca338975f28b0cfe9c66520339b042c0"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="getVardas"><param name="Local" value="class_zmogus.html#a82e05fb49136546e6e067ed49a4144a9"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="isvedimas"><param name="Local" value="class_zmogus.html#a205b8a50d4b1a8ed02035f4b46f87ea3"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="operator&lt;"><param name="Local" value="class_zmogus.html#a48f3eb80c58c104186392d8e4f5fbef1"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="operator="><param name="Local" value="class_zmogus.html#a6e1c0fe23d8d6377d1e5b259f9f77e17"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="setPavarde"><param name="Local" value="class_zmogus.html#adc5e7e88c07e2b26042b34baf0533ee5"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="setVardas"><param name="Local" value="class_zmogus.html#adf25f7cd8bfff935de20a7c3237ba1bc"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Pavarde_"><param name="Local" value="class_zmogus.html#a50bb805c4161a6860958418acb399457"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Vardas_"><param name="Local" value="class_zmogus.html#ae8010d9ee2e42d4283ba97ea73bcc1fb"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Index"><param name="Local" value="classes.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Hierarchy"><param name="Local" value="hierarchy.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Zmogus"><param name="Local" value="class_zmogus.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Lstudentas"><param name="Local" value="class_lstudentas.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Studentas"><param name="Local" value="class_studentas.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Members"><param name="Local" value="functions.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="All"><param name="Local" value="functions.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Functions"><param name="Local" value="functions_func.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Variables"><param name="Local" value="functions_vars.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Files"><param name="Local" value="files.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="File List"><param name="Local" value="files.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="klaidos.cpp"><param name="Local" value="klaidos_8cpp.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="skaitymoKlaidos"><param name="Local" value="klaidos_8cpp.html#a7ee841fe9abc0d4de3d7ce349fdf7449"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="skaitymoKlaidosFailas"><param name="Local" value="klaidos_8cpp.html#a3ab1cb63b4552df139dfbf77245921cc"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="skaitymoKlaidosPaz"><param name="Local" value="klaidos_8cpp.html#a68dd81f65720285fdee9905d66af2287"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="skaitymoKlaidosStud"><param name="Local" value="klaidos_8cpp.html#a5c7027909787f38a2ced460379fa61a1"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="klaidos.h"><param name="Local" value="klaidos_8h.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="skaitymoKlaidos"><param name="Local" value="klaidos_8h.html#a7ee841fe9abc0d4de3d7ce349fdf7449"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="skaitymoKlaidosFailas"><param name="Local" value="klaidos_8h.html#a3ab1cb63b4552df139dfbf77245921cc"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="skaitymoKlaidosPaz"><param name="Local" value="klaidos_8h.html#a68dd81f65720285fdee9905d66af2287"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="skaitymoKlaidosStud"><param name="Local" value="klaidos_8h.html#a5c7027909787f38a2ced460379fa61a1"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="listai.cpp"><param name="Local" value="listai_8cpp.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="lautosk"><param name="Local" value="listai_8cpp.html#a8df37745299b3cbd6c6518fa4db1498a"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="lgeneravimas"><param name="Local" value="listai_8cpp.html#afe6dedf0230e26dce1c31254c2abd1ab"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="lirasymas"><param name="Local" value="listai_8cpp.html#a8dc539c21e4ff0bed067b57292c7ebad"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="lisvedimas"><param name="Local" value="listai_8cpp.html#ae6e4c8d843abbad2789b63eae5dff6f8"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="livedimas"><param name="Local" value="listai_8cpp.html#a8f4101a9df7772d8bd930e51880f5262"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="lnuskaitymas"><param name="Local" value="listai_8cpp.html#a5b79e07317fef159c7ce24bbd8b080ae"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="lpadalinimas"><param name="Local" value="listai_8cpp.html#a2f3a06ffbb642ab3993cd45f0a0edcce"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="lpadalinimas1"><param name="Local" value="listai_8cpp.html#af0b027c3fb92c2519d919ff7f151e54e"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="lpadalinimas2"><param name="Local" value="listai_8cpp.html#a428c76d443b0d3b48af9ff983050413d"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="lzmogausVP"><param name="Local" value="listai_8cpp.html#a642c15e954d4d7b0b9f571025cbcb081"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="listai.h"><param name="Local" value="listai_8h.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="lautosk"><param name="Local" value="listai_8h.html#a8df37745299b3cbd6c6518fa4db1498a"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="lgeneravimas"><param name="Local" value="listai_8h.html#afe6dedf0230e26dce1c31254c2abd1ab"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="lirasymas"><param name="Local" value="listai_8h.html#a8dc539c21e4ff0bed067b57292c7ebad"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="lisvedimas"><param name="Local" value="listai_8h.html#ae6e4c8d843abbad2789b63eae5dff6f8"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="livedimas"><param name="Local" value="listai_8h.html#a8f4101a9df7772d8bd930e51880f5262"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="lnuskaitymas"><param name="Local" value="listai_8h.html#a5b79e07317fef159c7ce24bbd8b080ae"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="lpadalinimas"><param name="Local" value="listai_8h.html#a2f3a06ffbb642ab3993cd45f0a0edcce"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="lpadalinimas1"><param name="Local" value="listai_8h.html#af0b027c3fb92c2519d919ff7f151e54e"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="lpadalinimas2"><param name="Local" value="listai_8h.html#a428c76d443b0d3b48af9ff983050413d"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="lzmogausVP"><param name="Local" value="listai_8h.html#a642c15e954d4d7b0b9f571025cbcb081"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="lstudentas.cpp"><param name="Local" value="lstudentas_8cpp.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="lstudentas.h"><param name="Local" value="lstudentas_8h.html"><param name="ImageNumber" value="11"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Lstudentas"><param name="Local" value="class_lstudentas.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Lstudentas"><param name="Local" value="class_lstudentas.html#aabdf02fbe0843b7bfcb89f6745de22bc"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Lstudentas"><param name="Local" value="class_lstudentas.html#a9035426186923271d234a9654121c3e7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Lstudentas"><param name="Local" value="class_lstudentas.html#a8cba34b6b40a2540acba95a1fe35541d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="~Lstudentas"><param name="Local" value="class_lstudentas.html#a93b30ec0bd841d977931e9984aa46d19"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Lstudentas"><param name="Local" value="class_lstudentas.html#a8760db01673d40f4f92bd282dbe0920b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="countGalutinis"><param name="Local" value="class_lstudentas.html#a0187fb01c87bfa79e4fddbf14e3bce24"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="countMediana"><param name="Local" value="class_lstudentas.html#ac784c2b0f31a19ec28cd0576d08398e8"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="countVidurkis"><param name="Local" value="class_lstudentas.html#af8e08f6d13215ead0c01cf9893eeffb8"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getEgzaminas"><param name="Local" value="class_lstudentas.html#abed0018bf57eb52809ef6cae90f1388f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getGalutinis"><param name="Local" value="class_lstudentas.html#a9100e6346c4b62dd85df90dbf3c7050c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getND"><param name="Local" value="class_lstudentas.html#a95625dfdfc2a415b3da0bbf6a90701fe"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getNDskaicius"><param name="Local" value="class_lstudentas.html#a6bf29a2acdcf949dc83c57ec91c6a633"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getVidarmed"><param name="Local" value="class_lstudentas.html#a886bd85d818e8e4065a75be3484f33e3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isvedimas"><param name="Local" value="class_lstudentas.html#a5b23a670c1e9645044de669d4a97078a"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="operator&lt;"><param name="Local" value="class_lstudentas.html#aecb9117aeb5a9efe711e1f50bc93b47f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="operator="><param name="Local" value="class_lstudentas.html#a6c29c4b55eef75c60d527dfb4d1c6b5b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setEgzaminas"><param name="Local" value="class_lstudentas.html#a93d133d012a9b0be886a03bc007f5c4f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setGalutinis"><param name="Local" value="class_lstudentas.html#a33bd0d202578ffcf4d5d12b363f2ed40"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setND"><param name="Local" value="class_lstudentas.html#a13463799f07c2f4cb386faa375bf0a44"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setNDskaicius"><param name="Local" value="class_lstudentas.html#a7f91904114d04e814f173e1f05a27a0e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setVidarmed"><param name="Local" value="class_lstudentas.html#a49baa1953779d43a498a3aacdb90c94e"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="studentas.h"><param name="Local" value="studentas_8h.html"><param name="ImageNumber" value="11"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Studentas"><param name="Local" value="class_studentas.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Studentas"><param name="Local" value="class_studentas.html#ab459e995e8c9b24cdc9aec5b09a66539"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Studentas"><param name="Local" value="class_studentas.html#aa0df6f99f4732311861aed3d5cd680b8"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Studentas"><param name="Local" value="class_studentas.html#ad04749e2b1ec46628cd3bef0aab1d31f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="~Studentas"><param name="Local" value="class_studentas.html#a63e449e0f51a0b14340d02ee71b4be23"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Studentas"><param name="Local" value="class_studentas.html#af10e21a8512770f18df1eb1a04f054a3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="countGalutinis"><param name="Local" value="class_studentas.html#a4a55bfa9ffd7b01c46597443669463ed"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="countMediana"><param name="Local" value="class_studentas.html#a3c5c9a9b79e682cf99ed01da89e693a2"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="countVidurkis"><param name="Local" value="class_studentas.html#afff717ed500744e1311e925f4f078907"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getEgzaminas"><param name="Local" value="class_studentas.html#abe38c118e8e899b4de681f1d12adceab"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getGalutinis"><param name="Local" value="class_studentas.html#a434c720883bfcc4c6e4608ddf0e2c1a3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getND"><param name="Local" value="class_studentas.html#a90c534e6c725497a0841f286fc0b85d2"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getNDskaicius"><param name="Local" value="class_studentas.html#a820c622a9d40b292df8051032352bce3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getVidarmed"><param name="Local" value="class_studentas.html#a4ab6c64439b3cb86515f08e373bd8219"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isvedimas"><param name="Local" value="class_studentas.html#a84195bfa6309f4ea7d21d6cc6c8f2942"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="operator&lt;"><param name="Local" value="class_studentas.html#a5de58490ffb0fd6f3fe5c0437c9f1c5e"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="operator="><param name="Local" value="class_studentas.html#ae8b7c23858a5af9a1114940982056602"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="operator=="><param name="Local" value="class_studentas.html#abc0cbaad2c1b75fa5347779a515a560b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setEgzaminas"><param name="Local" value="class_studentas.html#ac7fa2f1df9d544ac1fc050689d1928bc"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setGalutinis"><param name="Local" value="class_studentas.html#a5619534aa98fe6e17f870a9edd8990f2"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setND"><param name="Local" value="class_studentas.html#ad706f110869cd02e2eeef5c1e56e6099"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setNDskaicius"><param name="Local" value="class_studentas.html#a521c308f57216de5f0f2f4f667ef3f55"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setVidarmed"><param name="Local" value="class_studentas.html#aaecd14a20830aa6c3e183c8d46090ab2"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="testavimas.cpp"><param name="Local" value="testavimas_8cpp.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="test"><param name="Local" value="testavimas_8cpp.html#a4fbeda76ab41b1dbcaf97a37581df34d"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="testavimas.h"><param name="Local" value="testavimas_8h.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="test"><param name="Local" value="testavimas_8h.html#a4fbeda76ab41b1dbcaf97a37581df34d"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="V2.0.cpp"><param name="Local" value="_v2_80_8cpp.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="main"><param name="Local" value="_v2_80_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="vektoriai.cpp"><param name="Local" value="vektoriai_8cpp.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="autosk"><param name="Local" value="vektoriai_8cpp.html#acc8ff420ef6f5623bedff95f556edb32"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="generavimas"><param name="Local" value="vektoriai_8cpp.html#a6052b9a017fd9d07a93a13b6dc573fda"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="irasymas"><param name="Local" value="vektoriai_8cpp.html#aa1194f7841c4bc75ff967d26cc13e0fd"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="isvedimas"><param name="Local" value="vektoriai_8cpp.html#a5a7988789dc007e49fb6602e7bf08f97"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ivedimas"><param name="Local" value="vektoriai_8cpp.html#ac1f2c620861b85d9f2f0a9c94d3e09ab"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="nuskaitymas"><param name="Local" value="vektoriai_8cpp.html#af979cc08dcc54ceaa70655d36f2943a7"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="padalinimas"><param name="Local" value="vektoriai_8cpp.html#acb8ee029ba2759eed26d34ab4b4be67b"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="padalinimas1"><param name="Local" value="vektoriai_8cpp.html#ade8ab6863aa43c25152b6a13ba59af19"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="padalinimas2"><param name="Local" value="vektoriai_8cpp.html#ac3ad95153de7a2f2b3abc28061c10304"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="zmogausVP"><param name="Local" value="vektoriai_8cpp.html#a1c1c4336da4c9c87288f4b23d9a888db"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="vektoriai.h"><param name="Local" value="vektoriai_8h.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="autosk"><param name="Local" value="vektoriai_8h.html#acc8ff420ef6f5623bedff95f556edb32"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="generavimas"><param name="Local" value="vektoriai_8h.html#a6052b9a017fd9d07a93a13b6dc573fda"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="irasymas"><param name="Local" value="vektoriai_8h.html#aa1194f7841c4bc75ff967d26cc13e0fd"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="isvedimas"><param name="Local" value="vektoriai_8h.html#a5a7988789dc007e49fb6602e7bf08f97"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ivedimas"><param name="Local" value="vektoriai_8h.html#ac1f2c620861b85d9f2f0a9c94d3e09ab"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="nuskaitymas"><param name="Local" value="vektoriai_8h.html#af979cc08dcc54ceaa70655d36f2943a7"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="padalinimas"><param name="Local" value="vektoriai_8h.html#acb8ee029ba2759eed26d34ab4b4be67b"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="padalinimas1"><param name="Local" value="vektoriai_8h.html#ade8ab6863aa43c25152b6a13ba59af19"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="padalinimas2"><param name="Local" value="vektoriai_8h.html#ac3ad95153de7a2f2b3abc28061c10304"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="zmogausVP"><param name="Local" value="vektoriai_8h.html#a1c1c4336da4c9c87288f4b23d9a888db"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="zmogus.h"><param name="Local" value="zmogus_8h.html"><param name="ImageNumber" value="11"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Zmogus"><param name="Local" value="class_zmogus.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Zmogus"><param name="Local" value="class_zmogus.html#aa7a8ba4d3c4778f9b35d59eef3e72574"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Zmogus"><param name="Local" value="class_zmogus.html#abcea2eb5f4c209f8623405a3d838f1c2"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Zmogus"><param name="Local" value="class_zmogus.html#ac137b6d449410ee45fe5992bb04ee129"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="~Zmogus"><param name="Local" value="class_zmogus.html#ac5615bf607a8f2f1b303ffa04328d24d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getPavarde"><param name="Local" value="class_zmogus.html#aca338975f28b0cfe9c66520339b042c0"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="getVardas"><param name="Local" value="class_zmogus.html#a82e05fb49136546e6e067ed49a4144a9"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="isvedimas"><param name="Local" value="class_zmogus.html#a205b8a50d4b1a8ed02035f4b46f87ea3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="operator&lt;"><param name="Local" value="class_zmogus.html#a48f3eb80c58c104186392d8e4f5fbef1"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="operator="><param name="Local" value="class_zmogus.html#a6e1c0fe23d8d6377d1e5b259f9f77e17"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setPavarde"><param name="Local" value="class_zmogus.html#adc5e7e88c07e2b26042b34baf0533ee5"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="setVardas"><param name="Local" value="class_zmogus.html#adf25f7cd8bfff935de20a7c3237ba1bc"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Pavarde_"><param name="Local" value="class_zmogus.html#a50bb805c4161a6860958418acb399457"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Vardas_"><param name="Local" value="class_zmogus.html#ae8010d9ee2e42d4283ba97ea73bcc1fb"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      </UL>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="File Members"><param name="Local" value="globals.html"><param name="ImageNumber" value="11"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="All"><param name="Local" value="globals.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Functions"><param name="Local" value="globals_func.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  </UL>
+</UL>
+</BODY>
+</HTML>

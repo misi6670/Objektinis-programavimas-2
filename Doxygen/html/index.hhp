@@ -1,0 +1,69 @@
+[OPTIONS]
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=index.html
+Index file=index.hhk
+Language=0x409 English (United States)
+Title=V2.0
+
+[WINDOWS]
+main="V2.0","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
+
+[FILES]
+_c_make_lists_8txt.html
+_r_e_a_d_m_e_8md.html
+_v2_80_8cpp.html
+annotated.html
+class_lstudentas-members.html
+class_lstudentas.html
+class_studentas-members.html
+class_studentas.html
+class_zmogus-members.html
+class_zmogus.html
+classes.html
+files.html
+functions.html
+functions_func.html
+functions_vars.html
+globals.html
+globals_func.html
+hierarchy.html
+index.html
+klaidos_8cpp.html
+klaidos_8h.html
+klaidos_8h_source.html
+listai_8cpp.html
+listai_8h.html
+listai_8h_source.html
+lstudentas_8cpp.html
+lstudentas_8h.html
+lstudentas_8h_source.html
+md__r_e_a_d_m_e.html
+pages.html
+studentas_8h.html
+studentas_8h_source.html
+testavimas_8cpp.html
+testavimas_8h.html
+testavimas_8h_source.html
+vektoriai_8cpp.html
+vektoriai_8h.html
+vektoriai_8h_source.html
+zmogus_8h.html
+zmogus_8h_source.html
+bc_s.png
+bdwn.png
+class_lstudentas.png
+class_studentas.png
+class_zmogus.png
+closed.png
+nav_f.png
+nav_h.png
+open.png
+sync_off.png
+sync_on.png
+tab_a.png
+tab_b.png
+tab_h.png
+tab_s.png
