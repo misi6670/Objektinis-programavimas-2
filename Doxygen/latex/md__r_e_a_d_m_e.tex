@@ -1,0 +1,118 @@
+Ši programa nuskaito vartotojų įvedamus duomenis (studento vardą ir pavardę, namų darbų ir egzamino rezultatą). Baigus duomenų įvedimą, suskaičiuoja galutinį balą ir juos pateikia į ekraną. Galutinis balas skaičiuojamas pagal vartotojo pasirinkimą -\/ naudojant vidurkį arba medianą ir yra pateikiamas dviejų skaičių po kablelio tikslumu. Studentai padalinami į dvi kategorijas -\/ \char`\"{}išlaikiusieji\char`\"{} (studentai, kurių galutinis balas $>$= 5.\+0) ir \char`\"{}neišlaikiusieji\char`\"{} (studentai, kurių galutinis balas $<$ 5.\+0) -\/ ir atitinkamai išvedami į du naujus failus -\/ \char`\"{}islaike.\+txt\char`\"{} ir \char`\"{}neislaike.\+txt\char`\"{}. Studentai išvedami surūšiuoti pagal vardus, pavardes ir galutinį pažymį. Vartotojui pasirinkus, studento pažymius galima generuoti atsitiktinai, duomenis taip pat galima nuskaityti iš failo.
+
+
+\begin{DoxyItemize}
+\item \href{https://github.com/misi6670/Objektinis-programavimas/releases/tag/V1.0}{\texttt{ V1.\+0 versija}} Programa parašyta naudojant struktūrą \char`\"{}studentas\char`\"{}.
+\item \href{https://github.com/misi6670/Objektinis-programavimas-2/releases/tag/V1.1}{\texttt{ V1.\+1 versija}} Šioje realizacijoje vietoje struktūros \char`\"{}studentas\char`\"{} naudojama sukurta klasė \char`\"{}\+Studentas\char`\"{}. Vartotojui pasirinkus, galima atlikti programos veikimo greičio (spartos) analizę. Testas atliekamas su 2 failais iš 100000, 1000000 įrašų, testo metu jie yra sugeneruojami ir pasibaigus testavimui ištrinami. Matavimai atliekami su kiekvienu failu. Matuojamas\+: studentų rūšiavimas į dvi grupes/kategorijas greičiausia strategija, naudojant vektorio tipo konteinerį.
+\item \href{https://github.com/misi6670/Objektinis-programavimas-2/releases/tag/V1.2}{\texttt{ V1.\+2 versija}} Šioje realizacijoje pridėti operatoriai klasėms \char`\"{}\+Studentas\char`\"{}, pagal 3 taisyklę (\char`\"{}\+Rule of three\char`\"{}), -\/ destruktorius, kopijavimo konstruktorius ir kopijavimo priskirties operatorius.
+\item \href{https://github.com/misi6670/Objektinis-programavimas-2/releases/tag/V1.5}{\texttt{ V1.\+5 versija}} Šioje realizacijoje vietoje vienos \mbox{\hyperlink{class_studentas}{Studentas}} klasės sukurtos dvi\+: bazinė klasė -\/ \mbox{\hyperlink{class_zmogus}{Zmogus}} -\/ skirta bendrai aprašyti žmogų, ir iš jos išvestinė (derived) klasė -\/ \mbox{\hyperlink{class_studentas}{Studentas}}. Bazinė klasė \mbox{\hyperlink{class_zmogus}{Zmogus}} yra abstrakčioji klasė, t.\+y. nėra galima sukurti žmogaus tipo objektų, o tik objektus, gautus iš jos išvestinių klasių.
+\end{DoxyItemize}
+
+Šioje realizacijoje sukurta dokumentacija panaudojant Doxygen. Realizuoti Unit Testai naudojant Google\+Test framework\textquotesingle{}ą.
+
+
+\begin{DoxyEnumerate}
+\item Naudojamos bibliotekos aprašytos {\itshape {\bfseries{\mbox{\hyperlink{klaidos_8h}{klaidos.\+h}}}}}, {\itshape {\bfseries{\mbox{\hyperlink{listai_8h}{listai.\+h}}}}}, {\itshape {\bfseries{\mbox{\hyperlink{lstudentas_8h}{lstudentas.\+h}}}}}, {\itshape {\bfseries{\mbox{\hyperlink{studentas_8h}{studentas.\+h}}}}}, {\itshape {\bfseries{\mbox{\hyperlink{testavimas_8h}{testavimas.\+h}}}}}, {\itshape {\bfseries{\mbox{\hyperlink{vektoriai_8h}{vektoriai.\+h}}}}} ir {\itshape {\bfseries{\mbox{\hyperlink{zmogus_8h}{zmogus.\+h}}}}} failuose
+\item Naudojamos funkcijos surašytos {\itshape {\bfseries{\mbox{\hyperlink{klaidos_8cpp}{klaidos.\+cpp}}}}}, {\itshape {\bfseries{\mbox{\hyperlink{listai_8cpp}{listai.\+cpp}}}}}, {\itshape {\bfseries{\mbox{\hyperlink{lstudentas_8cpp}{lstudentas.\+cpp}}}}}, {\itshape {\bfseries{\mbox{\hyperlink{testavimas_8cpp}{testavimas.\+cpp}}}}} ir {\itshape {\bfseries{\mbox{\hyperlink{vektoriai_8cpp}{vektoriai.\+cpp}}}}} failuose
+\item {\bfseries{\mbox{\hyperlink{testavimas_8h}{testavimas.\+h}}}} ir {\bfseries{\mbox{\hyperlink{vektoriai_8h}{vektoriai.\+h}}}} bibliotekos naudojamos {\bfseries{\mbox{\hyperlink{_v2_80_8cpp}{V2.\+0.\+cpp}}}} faile
+\item {\bfseries{\mbox{\hyperlink{klaidos_8h}{klaidos.\+h}}}} biblioteka naudojama {\bfseries{\mbox{\hyperlink{listai_8h}{listai.\+h}}}} ir {\bfseries{\mbox{\hyperlink{vektoriai_8h}{vektoriai.\+h}}}} failuose
+\item {\bfseries{\mbox{\hyperlink{listai_8h}{listai.\+h}}}} ir {\bfseries{\mbox{\hyperlink{vektoriai_8h}{vektoriai.\+h}}}} bibliotekos naudojamos {\bfseries{\mbox{\hyperlink{testavimas_8h}{testavimas.\+h}}}} faile
+\item {\bfseries{\mbox{\hyperlink{lstudentas_8h}{lstudentas.\+h}}}} biblioteka naudojama {\bfseries{\mbox{\hyperlink{listai_8h}{listai.\+h}}}} faile
+\item {\bfseries{\mbox{\hyperlink{studentas_8h}{studentas.\+h}}}} biblioteka naudojama {\bfseries{\mbox{\hyperlink{vektoriai_8h}{vektoriai.\+h}}}} faile
+\item {\bfseries{\mbox{\hyperlink{zmogus_8h}{zmogus.\+h}}}} biblioteka naudojama {\bfseries{\mbox{\hyperlink{lstudentas_8h}{lstudentas.\+h}}}} ir {\bfseries{\mbox{\hyperlink{studentas_8h}{studentas.\+h}}}} failuose
+\end{DoxyEnumerate}\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{Programos naudojimosi instrukcija}\label{md__r_e_a_d_m_e_autotoc_md1}
+Paleidus programą, reikia pasirinkti, ar norite atlikti testavimą. Norėdami atlikti testavimą, reikia įvesti \textquotesingle{}1\textquotesingle{}, kitu atveju įrašyti \textquotesingle{}0\textquotesingle{} ar bet kokį kitą skaičių, išskyrus \textquotesingle{}1\textquotesingle{}. 
+\begin{DoxyEnumerate}
+\item Pasirinkus vykdyti testavimą, t.\+y. įvedus \textquotesingle{}1\textquotesingle{}, reikės pasirinkti pagal ką norite, kad būtų skaičiuojamas galutinis balas. Norėdami, kad galutinis balas būtų skaičiuojamas pagal medianą, įveskite \textquotesingle{}1\textquotesingle{}, jeigu pagal vidurkį, įveskite bet kokį kitą skaičių, pavyzdžiui, \textquotesingle{}0\textquotesingle{}. Tuomet yra atliekamas testas ir išvedami rezultatai į ekraną tokiu pavidalu\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Failo is 100000 irasu (namu darbu skaicius: 8) testas:}
+\DoxyCodeLine{100000 studentu rusiavimas i dvi grupes/kategorijas naudojant vektoriu ir greiciausia strategija uztruko: 0.024373 s}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{Failo is 1000000 irasu (namu darbu skaicius: 3) testas:}
+\DoxyCodeLine{1000000 studentu rusiavimas i dvi grupes/kategorijas naudojant vektoriu ir greiciausia strategija uztruko: 0.201436 s}
+\end{DoxyCode}
+
+
+Testas atliekamas su failais iš 1000, 10000, 100000, 1000000 ir 10000000 įrašų, namų darbų skaičius generuojamas atsitiktinai ir kiekvienam failui skiriasi. Programa baigia darbą, procesas sustabdomas. 
+
+
+\item Pasirinkus testavimo nevykdyti, t.\+y. įvedus, pavyzdžiui, \textquotesingle{}0\textquotesingle{}, reikės pasirinkti pagal ką norite, kad būtų skaičiuojamas galutinis balas. Norėdami, kad galutinis balas būtų skaičiuojamas pagal medianą, įveskite \textquotesingle{}1\textquotesingle{}, jeigu pagal vidurkį, įveskite bet kokį kitą skaičių, pavyzdžiui, \textquotesingle{}0\textquotesingle{}. Tuomet reikia pasirinkti, ar norite nuskaityti duomenis iš failo. Norėdami duomenis nuskaityti iš failo įveskite \textquotesingle{}1\textquotesingle{}, kitu atveju įveskite \textquotesingle{}0\textquotesingle{} ar bet kokį kitą skaičių. 
+\begin{DoxyEnumerate}
+\item Pasirinkus nuskaityti duomenis iš failo, t.\+y. įvedus \textquotesingle{}1\textquotesingle{}, programa jūsų paprašys įvesti norimo nuskaityti tekstinio failo pavadinimą, tačiau \textquotesingle{}.txt\textquotesingle{} rašyti nereikia. Pavyzdžiui, jei norite, kad programa nuskaitytų failą \textquotesingle{}studentai.\+txt\textquotesingle{}, tai reikia įvesti tik patį pavadinimą, t.\+y. tik \textquotesingle{}studentai\textquotesingle{}. Tuomet rezultatai bus išvedami į ekraną tokiu šablonu\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Vardas         Pavarde        Galutinis (Vid./Med.)}
+\DoxyCodeLine{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}
+\DoxyCodeLine{Vardas1        Pavarde1       7.80}
+\DoxyCodeLine{Vardas2        Pavarde2       6.40}
+\DoxyCodeLine{Vardas3        Pavarde3       3.00}
+\DoxyCodeLine{Vardas4        Pavarde4       9.00}
+\end{DoxyCode}
+
+
+Taip pat bus sukurti du failai \textquotesingle{}islaike\textquotesingle{} ir \textquotesingle{}neislaike\textquotesingle{}, kuriuose studentai bus padalinti atitinkamai į tuos, kurių galutinis pažymys didesnis arba lygus 5, ir tuos, kurių galutinis pažymys mažesnis negu 5. Studentai surūšiuoti pagal vardą, pavardę ir galutinį balą. Programa baigia darbą, procesas sustabdomas.  
+\item Pasirinkus nenuskaityti duomenis iš failo, pavyzdžiui, įvedus \textquotesingle{}0\textquotesingle{}, jums reikės pasirinkti, ar norite, kad studento namų darbų ir egzamino balus programa sugeneruotų automatiškai. Norėdami, kad programa sugeneruotų balus automatiškai, reikia įvesti \textquotesingle{}1\textquotesingle{}, kitu atveju -\/ \textquotesingle{}0\textquotesingle{} arba bet kokį kitą skaičių. 
+\begin{DoxyEnumerate}
+\item Pasirinkus generuoti pažymius automatiškai, t.\+y. įvedus \textquotesingle{}1\textquotesingle{}, jūsų programa paprašys įvesti studentų skaičių. Įvedus studentų skaičių, jums reikės suvesti studento vardą ir pavardę. Suvedus studento vardą ir pavardę, programa sugeneruoja pažymius ir juos išveda į ekraną tokiu pavidalu\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 studento atsitiktinai sugeneruoti pazymiai:}
+\DoxyCodeLine{3 10 10 3 3 4 7 1 7 6 10 6 2 10}
+\DoxyCodeLine{}
+\DoxyCodeLine{1 studento atsitiktinai sugeneruotas egzamino balas: 7}
+\end{DoxyCode}
+
+
+Suvedus visų studentų vardus ir pavardes, į ekraną išvedami studentai, surūšiuoti pagal vardą, pavardę ir galutinį balą, tokiu pavidalu\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Vardas         Pavarde        Galutinis (Vid./Med.)}
+\DoxyCodeLine{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}
+\DoxyCodeLine{Vardas1        Pavarde1       7.80}
+\DoxyCodeLine{Vardas2        Pavarde2       6.40}
+\DoxyCodeLine{Vardas3        Pavarde3       3.00}
+\DoxyCodeLine{Vardas4        Pavarde4       9.00}
+\end{DoxyCode}
+
+
+Taip pat bus sukurti du failai \textquotesingle{}islaike\textquotesingle{} ir \textquotesingle{}neislaike\textquotesingle{}, kuriuose studentai bus padalinti atitinkamai į tuos, kurių galutinis pažymys didesnis arba lygus 5, ir tuos, kurių galutinis pažymys mažesnis negu 5. Studentai surūšiuoti pagal vardą, pavardę ir galutinį balą. Programa baigia darbą, procesas sustabdomas.  
+\item Pasirinkus negeneruoti pažymių automatiškai, pavyzdžiui, įvedus \textquotesingle{}0\textquotesingle{}, jūsų programa paprašys įvesti studentų skaičių. Įvedus studentų skaičių, jums reikės suvesti studento vardą ir pavardę. Suvedus studento vardą ir pavardę, programa jūsų paprašys suvesti studento pažymius, kai įvesite bent vieną pažymį, programa jums parašys kiek pažymių jau įvedėte, pavyzdžiui\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ Iveskite 1 studento pazymius, suvedus visus pazymius irasykite 0}
+\DoxyCodeLine{5}
+\DoxyCodeLine{Ivedete 1 pazymi(-\/ius)}
+\DoxyCodeLine{6}
+\DoxyCodeLine{Ivedete 2 pazymi(-\/ius)}
+\DoxyCodeLine{7}
+\DoxyCodeLine{Ivedete 3 pazymi(-\/ius)}
+\DoxyCodeLine{10}
+\DoxyCodeLine{Ivedete 4 pazymi(-\/ius)}
+\DoxyCodeLine{0}
+\end{DoxyCode}
+
+
+Suvedus visus pažymius įveskite \textquotesingle{}0\textquotesingle{}, kad programa suprastų, jog baigėte vesti visus pažymius. Tuomet programa paprašys jūsų įvesti studento egzamino pažymį. Suvedus visų studentų vardus ir pavardes, namų darbų pažymius ir egzamino rezultatus, į ekraną išvedami studentai, surūšiuoti pagal vardą, pavardę ir galutinį balą, tokiu pavidalu\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Vardas         Pavarde        Galutinis (Vid./Med.)}
+\DoxyCodeLine{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}
+\DoxyCodeLine{Vardas1        Pavarde1       7.80}
+\DoxyCodeLine{Vardas2        Pavarde2       6.40}
+\DoxyCodeLine{Vardas3        Pavarde3       3.00}
+\DoxyCodeLine{Vardas4        Pavarde4       9.00}
+\end{DoxyCode}
+
+
+Taip pat bus sukurti du failai \textquotesingle{}islaike\textquotesingle{} ir \textquotesingle{}neislaike\textquotesingle{}, kuriuose studentai bus padalinti atitinkamai į tuos, kurių galutinis pažymys didesnis arba lygus 5, ir tuos, kurių galutinis pažymys mažesnis negu 5. Studentai surūšiuoti pagal vardą, pavardę ir galutinį balą. Programa baigia darbą, procesas sustabdomas.  
+\end{DoxyEnumerate}
+\end{DoxyEnumerate}
+\end{DoxyEnumerate}
