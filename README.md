@@ -10,10 +10,10 @@ Programa parašyta naudojant struktūrą "studentas".
 * [V1.5 versija](https://github.com/misi6670/Objektinis-programavimas-2/releases/tag/V1.5) 
 Šioje realizacijoje vietoje vienos Studentas klasės sukurtos dvi: bazinė klasė - Zmogus - skirta bendrai aprašyti žmogų, ir iš jos išvestinė (derived) klasė - Studentas. Bazinė klasė Zmogus yra abstrakčioji klasė, t.y. nėra galima sukurti žmogaus tipo objektų, o tik objektus, gautus iš jos išvestinių klasių.
 
-Šioje realizacijoje sukurta dokumentacija panaudojant Doxygen.
+Šioje realizacijoje sukurta dokumentacija panaudojant Doxygen. Realizuoti Unit Testai naudojant GoogleTest framework'ą. 
 
 1. Naudojamos bibliotekos aprašytos ***klaidos.h***, ***listai.h***, ***lstudentas.h***, ***studentas.h***, ***testavimas.h***, ***vektoriai.h*** ir ***zmogus.h*** failuose
-2. Naudojamos funkcijos surašytos ***klaidos.cpp***, ***listai.cpp***, ***lstudentas.cpp***, ***studentas.cpp***, ***testavimas.cpp***, ***vektoriai.cpp*** ir ***zmogus.cpp*** failuose
+2. Naudojamos funkcijos surašytos ***klaidos.cpp***, ***listai.cpp***, ***lstudentas.cpp***, ***testavimas.cpp*** ir ***vektoriai.cpp*** failuose
 3. **testavimas.h** ir **vektoriai.h** bibliotekos naudojamos **V2.0.cpp** faile
 4. **klaidos.h** biblioteka naudojama **listai.h** ir **vektoriai.h** failuose
 5. **listai.h** ir **vektoriai.h** bibliotekos naudojamos **testavimas.h** faile
